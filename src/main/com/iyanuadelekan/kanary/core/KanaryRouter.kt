@@ -13,6 +13,14 @@ import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
 /**
+ * @param path the path of the route
+ * @param controller controller that handles requests from the route
+ * @param action reference to an action within a KanaryController
+ * @constructor initializes route instance
+ */
+data class Route(val path: String, val controller: KanaryController?, val action: (Request, HttpServletRequest, HttpServletResponse) -> Unit)
+
+/**
  * @property basePath the root path of mapped HTTP request
  * @constructor Initializes KanaryRouter object
  */
@@ -28,12 +36,8 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * Router function handling GET requests
      * @return current instance of [KanaryRouter]
      */
-    override fun get(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit): KanaryRouter {
-        if (basePath == null) {
-            this.queueRoute(HttpConstants.GET.name, path, action)
-        } else {
-            this.queueRoute(HttpConstants.GET.name, prependBasePath(path), action)
-        }
+    override fun get(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?): KanaryRouter {
+        assembleAndQueueRoute(HttpConstants.GET.name, path, action, controller)
         return this
     }
 
@@ -41,12 +45,8 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * Router function handling POST requests
      * @return current instance of [KanaryRouter]
      */
-    override fun post(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit): KanaryRouter {
-        if (basePath == null) {
-            this.queueRoute(HttpConstants.POST.name, path, action)
-        } else {
-            this.queueRoute(HttpConstants.POST.name, prependBasePath(path), action)
-        }
+    override fun post(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?): KanaryRouter {
+        assembleAndQueueRoute(HttpConstants.POST.name, path, action, controller)
         return this
     }
 
@@ -54,12 +54,8 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * Router function handling DELETE requests
      * @return current instance of [KanaryRouter]
      */
-    override fun delete(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit): KanaryRouter {
-        if (basePath == null) {
-            this.queueRoute(HttpConstants.DELETE.name, path, action)
-        } else {
-            this.queueRoute(HttpConstants.DELETE.name, prependBasePath(path), action)
-        }
+    override fun delete(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?): KanaryRouter {
+        assembleAndQueueRoute(HttpConstants.DELETE.name, path, action, controller)
         return this
     }
 
@@ -67,12 +63,8 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * Router function handling PUT requests
      * @return current instance of [KanaryRouter]
      */
-    override fun put(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit): KanaryRouter {
-        if (basePath == null) {
-            this.queueRoute(HttpConstants.PUT.name, path, action)
-        } else {
-            this.queueRoute(HttpConstants.PUT.name, prependBasePath(path), action)
-        }
+    override fun put(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?): KanaryRouter {
+        assembleAndQueueRoute(HttpConstants.GET.name, path, action, controller)
         return this
     }
 
@@ -80,30 +72,22 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * Router function handling PATCH requests
      * @return current instance of [KanaryRouter]
      */
-    override fun patch(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit): KanaryRouter {
-        if (basePath == null) {
-            this.queueRoute(HttpConstants.PATCH.name, path, action)
-        } else {
-            this.queueRoute(HttpConstants.PATCH.name, prependBasePath(path), action)
-        }
+    override fun patch(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?): KanaryRouter {
+        assembleAndQueueRoute(HttpConstants.PATCH.name, path, action, controller)
         return this
     }
 
     /**
      * Function used for route queuing
-     * Adds a HashMap containing the [path] as key and [action]
-     * to the route list
+     * adds a [route] based on its [method] to its appropriate route list
      */
-    private fun queueRoute(method: String, path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit) {
-        val routeMap = HashMap<String, (Request, HttpServletRequest, HttpServletResponse) -> Unit>()
-        routeMap.put(path, action)
-
+    private fun queueRoute(method: String, route: Route) {
         when(method) {
-            HttpConstants.GET.name -> getRouteList.add(routeMap)
-            HttpConstants.POST.name -> postRouteList.add(routeMap)
-            HttpConstants.PUT.name -> putRouteList.add(routeMap)
-            HttpConstants.DELETE.name -> deleteRouteList.add(routeMap)
-            HttpConstants.PATCH.name -> patchRouteList.add(routeMap)
+            HttpConstants.GET.name -> getRouteList.add(route)
+            HttpConstants.POST.name -> postRouteList.add(route)
+            HttpConstants.PUT.name -> putRouteList.add(route)
+            HttpConstants.DELETE.name -> deleteRouteList.add(route)
+            HttpConstants.PATCH.name -> patchRouteList.add(route)
             else -> {
                 println("Unrecognized HTTP method: $method")
             }
@@ -141,7 +125,7 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * @return Boolean indicating if [path] is a valid route path
      */
     private fun isRoutePathValid(path: String): Boolean {
-        return Regex("\\w+(/\\w*)*") matches path
+        return Regex("(/\\w*)+") matches path
     }
 
     /**
@@ -152,8 +136,28 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
         return "$basePath/$path"
     }
 
-    private fun fireAction() {
+    /**
+     * Used to create and queue a route
+     * @param method the HTTP method accepted by the route
+     * @param path the HTTP request path
+     * @param action reference to a controller action
+     * @param controller controller routed to by router
+     */
+    private fun assembleAndQueueRoute(method: String, path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?) {
+        if(controller == null && routeController == null) {
+            throw InvalidRouteException("Null controller for route $method $path is not allowed.")
+        }
 
+        if (controller != null) {
+            routeController = controller
+        }
+
+        if (basePath == null) {
+            this.queueRoute(HttpConstants.PUT.name, Route(path, routeController, action))
+        } else {
+            this.queueRoute(HttpConstants.PUT.name, Route(prependBasePath(path), routeController, action))
+        }
     }
+
 
 }
