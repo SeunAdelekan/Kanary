@@ -16,7 +16,18 @@ class UserController: KanaryController() {
 
         val out = response.writer
 
-        out.println("<h1>Hello world!</h1>")
+        out.println("<h1>User created!</h1>")
+
+        baseRequest.isHandled = true
+    }
+
+    fun retrieveUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
+        response.contentType = "text/html; charset=utf-8"
+        response.status = HttpServletResponse.SC_OK
+
+        val out = response.writer
+
+        out.println("<h1>User retrieved!</h1>")
 
         baseRequest.isHandled = true
     }
