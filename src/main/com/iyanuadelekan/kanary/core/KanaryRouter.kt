@@ -12,13 +12,6 @@ import org.eclipse.jetty.server.Request
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-/**
- * @param path the path of the route
- * @param controller controller that handles requests from the route
- * @param action reference to an action within a KanaryController
- * @constructor initializes route instance
- */
-data class Route(val path: String, val controller: KanaryController?, val action: (Request, HttpServletRequest, HttpServletResponse) -> Unit)
 
 /**
  * @property basePath the root path of mapped HTTP request
@@ -98,7 +91,7 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * @param method HTTP method handled by route
      * @param route Instance of [Route]
      */
-    private fun queueRoute(method: String, route: Route) {
+    private fun enqueueRoute(method: String, route: Route) {
         when(method) {
             HttpConstants.GET.name -> getRouteList.add(route)
             HttpConstants.POST.name -> postRouteList.add(route)
@@ -168,20 +161,29 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
         if (isRoutePathValid(path)) {
             if(controller == null && routeController == null) {
                 throw InvalidRouteException("Null controller for route '$method $path' is not allowed.")
-            }
 
-            if (controller != null) {
-                routeController = controller
-            }
-
-            if (basePath == null) {
-                this.queueRoute(method, Route(path, routeController, action))
             } else {
-                this.queueRoute(method, Route(prependBasePath(path), routeController, action))
+                if (controller != null) {
+                    routeController = controller
+                }
+                if (basePath == null) {
+                    this.enqueueRoute(method, Route(path, routeController, action))
+                } else {
+                    this.enqueueRoute(method, Route(prependBasePath(path), routeController, action))
+                }
             }
         } else {
             throw InvalidRouteException("The path '$path' is an invalid route path")
         }
+
     }
+
+    /**
+     * @param path the path of the route
+     * @param controller controller that handles requests from the route
+     * @param action reference to an action within a KanaryController
+     * @constructor initializes route instance
+     */
+    data class Route(val path: String, val controller: KanaryController?, val action: (Request, HttpServletRequest, HttpServletResponse) -> Unit)
 
 }
