@@ -12,9 +12,9 @@ import org.eclipse.jetty.server.Request
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-
 /**
  * @property basePath the root path of mapped HTTP request
+ * @property routeController the controller used to handle routes within the [KanaryRouter]
  * @constructor Initializes KanaryRouter object
  */
 class KanaryRouter(var basePath: String?= null, var routeController: KanaryController?= null): RouterInterface {
@@ -177,13 +177,5 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
         }
 
     }
-
-    /**
-     * @param path the path of the route
-     * @param controller controller that handles requests from the route
-     * @param action reference to an action within a KanaryController
-     * @constructor initializes route instance
-     */
-    data class Route(val path: String, val controller: KanaryController?, val action: (Request, HttpServletRequest, HttpServletResponse) -> Unit)
 
 }
