@@ -37,6 +37,10 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
                 }
 
                 executeAfterAction(route, request, response)
+            } else {
+                /**
+                 * TODO add 404 response for routes not found
+                 */
             }
         }
     }
@@ -52,49 +56,36 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
         var matchedRoutes: List<Route>
         val formattedTarget: String? = RequestUtils().formatTarget(target)
 
-        /**
-         * TODO add 404 response for routes not found
-         */
         app.routerList.forEach { router -> run {
             when(method) {
                 HttpConstants.GET.name -> {
                     matchedRoutes = router.getRouteList.filter { it.path == formattedTarget }
                     if(matchedRoutes.isNotEmpty()) {
                         route = matchedRoutes[0]
-                    } else {
-
                     }
                 }
                 HttpConstants.POST.name -> {
                     matchedRoutes = router.postRouteList.filter { it.path == formattedTarget }
                     if(matchedRoutes.isNotEmpty()) {
                         route = matchedRoutes[0]
-                    } else {
-
                     }
                 }
                 HttpConstants.PUT.name -> {
                     matchedRoutes = router.putRouteList.filter { it.path == formattedTarget }
                     if(matchedRoutes.isNotEmpty()) {
                         route = matchedRoutes[0]
-                    } else {
-
                     }
                 }
                 HttpConstants.DELETE.name -> {
                     matchedRoutes = router.deleteRouteList.filter { it.path == formattedTarget }
                     if(matchedRoutes.isNotEmpty()) {
                         route = matchedRoutes[0]
-                    } else {
-
                     }
                 }
                 HttpConstants.PATCH.name -> {
                     matchedRoutes = router.patchRouteList.filter { it.path == formattedTarget }
                     if(matchedRoutes.isNotEmpty()) {
                         route = matchedRoutes[0]
-                    } else {
-
                     }
                 }
             }
