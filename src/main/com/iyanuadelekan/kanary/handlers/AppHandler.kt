@@ -1,10 +1,8 @@
 package com.iyanuadelekan.kanary.handlers
 
-import com.iyanuadelekan.kanary.UserController
 import com.iyanuadelekan.kanary.app.KanaryApp
 import com.iyanuadelekan.kanary.constants.HttpConstants
 import com.iyanuadelekan.kanary.core.Route
-import com.iyanuadelekan.kanary.libs.RouteList
 import com.iyanuadelekan.kanary.utils.RequestUtils
 import org.eclipse.jetty.server.Request
 import org.eclipse.jetty.server.handler.AbstractHandler
