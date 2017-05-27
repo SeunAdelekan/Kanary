@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletResponse
  */
 
 /**
- * @param path the path of the route
- * @param controller controller that handles requests from the route
- * @param action reference to an action within a KanaryController
+ * @property path the path of the route
+ * @property controller controller that handles requests from the route
+ * @property action reference to an action within a KanaryController
  * @constructor initializes route instance
  */
 data class Route(val path: String, val controller: KanaryController?, val action: (Request, HttpServletRequest, HttpServletResponse) -> Unit)

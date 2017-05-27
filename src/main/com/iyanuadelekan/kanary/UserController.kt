@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletResponse
  */
 class UserController: KanaryController() {
 
+    fun beforeAction() {
+
+    }
+
     fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
         response.contentType = "text/html; charset=utf-8"
         response.status = HttpServletResponse.SC_OK
