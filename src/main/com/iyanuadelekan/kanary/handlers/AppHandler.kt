@@ -33,6 +33,8 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
                 if(baseRequest != null && response != null) {
                     action.invoke(baseRequest, request, response)
                 }
+
+                executeAfterAction(route, request, response)
             }
         }
     }
@@ -48,6 +50,9 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
         var matchedRoutes: List<Route>
         val formattedTarget: String? = RequestUtils().formatTarget(target)
 
+        /**
+         * TODO add 404 response for routes not found
+         */
         app.routerList.forEach { router -> run {
             when(method) {
                 HttpConstants.GET.name -> {
@@ -104,4 +109,15 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
     private fun executeBeforeAction(route: Route, request: HttpServletRequest, response: HttpServletResponse?) {
         route.controller?.beforeAction(request, response)
     }
+
+    /**
+     * Calls afterAction life cycle callback of route's Associated controller
+     * @param route Instance of [Route]
+     * @param request Instance of [HttpServletRequest]
+     * @param response Instance of [HttpServletResponse]
+     */
+    private fun executeAfterAction(route: Route, request: HttpServletRequest, response: HttpServletResponse?) {
+        route.controller?.afterAction(request, response)
+    }
+
 }
