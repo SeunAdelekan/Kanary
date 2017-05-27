@@ -4,6 +4,7 @@ import com.iyanuadelekan.kanary.UserController
 import com.iyanuadelekan.kanary.app.KanaryApp
 import com.iyanuadelekan.kanary.constants.HttpConstants
 import com.iyanuadelekan.kanary.core.Route
+import com.iyanuadelekan.kanary.libs.RouteList
 import com.iyanuadelekan.kanary.utils.RequestUtils
 import org.eclipse.jetty.server.Request
 import org.eclipse.jetty.server.handler.AbstractHandler
@@ -44,24 +45,50 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
      */
     private fun resolveTargetRoute(method: String?, target: String?): Route? {
         var route: Route? = null
+        var matchedRoutes: List<Route>
         val formattedTarget: String? = RequestUtils().formatTarget(target)
 
         app.routerList.forEach { router -> run {
             when(method) {
                 HttpConstants.GET.name -> {
-                    route = router.getRouteList.filter { it.path == formattedTarget }[0]
+                    matchedRoutes = router.getRouteList.filter { it.path == formattedTarget }
+                    if(matchedRoutes.isNotEmpty()) {
+                        route = matchedRoutes[0]
+                    } else {
+
+                    }
                 }
                 HttpConstants.POST.name -> {
-                    route = router.postRouteList.filter { it.path == formattedTarget }[0]
+                    matchedRoutes = router.postRouteList.filter { it.path == formattedTarget }
+                    if(matchedRoutes.isNotEmpty()) {
+                        route = matchedRoutes[0]
+                    } else {
+
+                    }
                 }
                 HttpConstants.PUT.name -> {
-                    route = router.putRouteList.filter { it.path == formattedTarget }[0]
+                    matchedRoutes = router.putRouteList.filter { it.path == formattedTarget }
+                    if(matchedRoutes.isNotEmpty()) {
+                        route = matchedRoutes[0]
+                    } else {
+
+                    }
                 }
                 HttpConstants.DELETE.name -> {
-                    route = router.deleteRouteList.filter { it.path == formattedTarget }[0]
+                    matchedRoutes = router.deleteRouteList.filter { it.path == formattedTarget }
+                    if(matchedRoutes.isNotEmpty()) {
+                        route = matchedRoutes[0]
+                    } else {
+
+                    }
                 }
                 HttpConstants.PATCH.name -> {
-                    route = router.patchRouteList.filter { it.path == formattedTarget }[0]
+                    matchedRoutes = router.patchRouteList.filter { it.path == formattedTarget }
+                    if(matchedRoutes.isNotEmpty()) {
+                        route = matchedRoutes[0]
+                    } else {
+
+                    }
                 }
             }
         } }
