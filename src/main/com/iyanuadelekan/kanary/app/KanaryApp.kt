@@ -3,8 +3,6 @@ package com.iyanuadelekan.kanary.app
 import com.iyanuadelekan.kanary.core.KanaryRouter
 import org.eclipse.jetty.server.handler.ContextHandler
 import javax.servlet.http.HttpServletRequest
-import javax.servlet.http.HttpServletResponse
-
 
 /**
  * @author Iyanu Adelekan
@@ -19,10 +17,9 @@ class KanaryApp : ContextHandler() {
     /**
      * Adds [middleware] to the app
      *
-     * Middleware takes the simple form of an anonymous function
-     * consisting of an instant of [HttpServletRequest] as its first
-     * parameter and an instance of [HttpServletResponse] as its second
-     * parameter
+     * Middleware takes the simple form of a lambda
+     * consisting of an instant of [HttpServletRequest] as its sole
+     * parameter.
      *
      * All middleware added to the app will be executed in a non
      * blocking fashion. A separate thread is executed for each

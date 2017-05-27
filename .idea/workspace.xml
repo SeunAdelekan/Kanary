@@ -39,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EchoApp.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EchoApp.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/EchoApp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
                 <element signature="e#0#233#0" expanded="true" />
               </folding>
@@ -51,13 +51,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KanaryApp.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KanaryApp.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/KanaryApp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="60">
+              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding>
-                <element signature="e#38#233#0" expanded="true" />
+                <element signature="e#38#187#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1004,12 +1004,12 @@
       <workItem from="1495579624012" duration="2320000" />
       <workItem from="1495627823068" duration="943000" />
       <workItem from="1495628837575" duration="42508000" />
-      <workItem from="1495880515092" duration="5728000" />
+      <workItem from="1495880515092" duration="6204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55853000" />
+    <option name="totallyTimeSpent" value="56329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1476,22 +1476,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/KanaryApp.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/EchoApp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="138">
+          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding>
-            <element signature="e#38#233#0" expanded="true" />
+            <element signature="e#0#233#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/EchoApp.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/KanaryApp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding>
-            <element signature="e#0#233#0" expanded="true" />
+            <element signature="e#38#187#0" expanded="true" />
           </folding>
         </state>
       </provider>
