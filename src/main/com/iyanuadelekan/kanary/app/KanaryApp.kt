@@ -34,6 +34,11 @@ class KanaryApp : ContextHandler() {
         return this
     }
 
+    /**
+     * Adds a varying number of [middleware] to the app at a go
+     * @param middleware varying number of middleware
+     * @return current KanaryApp instance
+     */
     fun use(vararg middleware: (request: HttpServletRequest?) -> Unit): KanaryApp {
         middlewareList += middleware
         return this
@@ -48,6 +53,11 @@ class KanaryApp : ContextHandler() {
         return this
     }
 
+    /**
+     * Adds a varying number of [routers] to the app at a go
+     * @param routers varying number of routers
+     * @return current KanaryApp instance
+     */
     fun mount(vararg routers: KanaryRouter): KanaryApp {
         routerList += routers
         return this
