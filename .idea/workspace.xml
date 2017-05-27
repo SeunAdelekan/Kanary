@@ -39,11 +39,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EchoApp.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/EchoApp.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#233#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserController.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/UserController.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="e#34#253#0" expanded="true" />
               </folding>
@@ -51,14 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KanaryApp.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KanaryApp.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/KanaryApp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="140">
+              <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
               <folding>
                 <element signature="e#38#187#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/io/kanary/core/KanaryRouter.kt" />
         <option value="$PROJECT_DIR$/src/com/iyanuadelekan/kanary/core/KanaryRouter.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/connectors/HttpConnector.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/connectors/HttpsConnector.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/KanaryEnvironment.kt" />
@@ -140,10 +161,11 @@
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/Route.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/libs/RouteList.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/KanaryController.kt" />
-        <option value="$PROJECT_DIR$/src/main/EchoApp.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/handlers/AppHandler.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/UserController.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/KanaryApp.kt" />
+        <option value="$PROJECT_DIR$/src/main/EchoApp.kt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -980,12 +1002,12 @@
       <workItem from="1495579624012" duration="2320000" />
       <workItem from="1495627823068" duration="943000" />
       <workItem from="1495628837575" duration="42508000" />
-      <workItem from="1495880515092" duration="8508000" />
+      <workItem from="1495880515092" duration="9430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58633000" />
+    <option name="totallyTimeSpent" value="59555000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1377,30 +1399,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/Route.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="e#39#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/EchoApp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1452,10 +1456,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/EchoApp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/UserController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="e#34#253#0" expanded="true" />
           </folding>
@@ -1464,11 +1478,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/KanaryApp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+        <state relative-caret-position="140">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
           <folding>
             <element signature="e#38#187#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
