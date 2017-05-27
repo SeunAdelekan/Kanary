@@ -2,6 +2,7 @@ package com.iyanuadelekan.kanary
 
 import com.iyanuadelekan.kanary.core.KanaryController
 import org.eclipse.jetty.server.Request
+import java.util.stream.Collectors
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -19,7 +20,7 @@ class UserController: KanaryController() {
         out.println("<h1>User created!</h1>")
 
         baseRequest.isHandled = true
-        println("Done!!!!")
+        println(request.getReader().lines().collect(Collectors.joining(System.lineSeparator())))
     }
 
     fun retrieveUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {

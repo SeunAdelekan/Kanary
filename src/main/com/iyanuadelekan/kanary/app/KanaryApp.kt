@@ -34,6 +34,11 @@ class KanaryApp : ContextHandler() {
         return this
     }
 
+    fun use(vararg middleware: (request: HttpServletRequest?) -> Unit): KanaryApp {
+        middlewareList += middleware
+        return this
+    }
+
     /**
      * Mounts a [router] on the application queue
      * @return current KanaryApp instance
