@@ -92,6 +92,6 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
             }
         } }
         return route
-
     }
+
 }
