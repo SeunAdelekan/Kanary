@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse
 
 /**
  * @author Iyanu Adelekan on 25/05/2017.
+ * @property app Instance of [KanaryApp]
  */
 class AppHandler(val app: KanaryApp): AbstractHandler() {
 
