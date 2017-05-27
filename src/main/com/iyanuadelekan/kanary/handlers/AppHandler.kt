@@ -28,6 +28,7 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
 
             if (route != null) {
                 val action = route.action
+                executeBeforeAction(route, request, response)
 
                 if(baseRequest != null && response != null) {
                     action.invoke(baseRequest, request, response)
@@ -94,4 +95,13 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
         return route
     }
 
+    /**
+     * Calls beforeAction life cycle callback of route's Associated controller
+     * @param route Instance of [Route]
+     * @param request Instance of [HttpServletRequest]
+     * @param response Instance of [HttpServletResponse]
+     */
+    private fun executeBeforeAction(route: Route, request: HttpServletRequest, response: HttpServletResponse?) {
+        route.controller?.beforeAction(request, response)
+    }
 }

@@ -17,8 +17,8 @@ open class KanaryController {
      * invokable target action.
      *
      * @param request Instance of [HttpServletRequest]
-     * @param response Instancte of [HttpServletResponse]
+     * @param response Instance of [HttpServletResponse]
      */
-    fun beforeAction(request: HttpServletRequest, response: HttpServletResponse?) {}
+    open fun beforeAction(request: HttpServletRequest, response: HttpServletResponse?) {}
 
 }
