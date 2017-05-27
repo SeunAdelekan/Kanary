@@ -19,6 +19,7 @@ class UserController: KanaryController() {
         out.println("<h1>User created!</h1>")
 
         baseRequest.isHandled = true
+        println("Done!!!!")
     }
 
     fun retrieveUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {

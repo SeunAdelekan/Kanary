@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse
 class KanaryApp : ContextHandler() {
 
     val routerList: ArrayList<KanaryRouter> = ArrayList()
-    val middlewareList: ArrayList<(HttpServletRequest) -> Unit> = ArrayList()
+    val middlewareList: ArrayList<(HttpServletRequest?) -> Unit> = ArrayList()
 
     /**
      * Adds [middleware] to the app
@@ -33,7 +33,7 @@ class KanaryApp : ContextHandler() {
      * @param middleware Middleware to be added
      * @return current KanaryApp instance
      */
-    fun use(middleware: (request: HttpServletRequest) -> Unit): KanaryApp {
+    fun use(middleware: (request: HttpServletRequest?) -> Unit): KanaryApp {
         middlewareList.add(middleware)
         return this
     }
