@@ -1,6 +1,5 @@
 package com.iyanuadelekan.kanary.app
 
-import com.iyanuadelekan.kanary.core.KanaryMiddleware
 import com.iyanuadelekan.kanary.core.KanaryRouter
 import org.eclipse.jetty.server.handler.ContextHandler
 import javax.servlet.http.HttpServletRequest
