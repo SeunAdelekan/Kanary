@@ -120,4 +120,11 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
         route.controller?.afterAction(request, response)
     }
 
+    /**
+     * This executes all the middleware that have been queued
+     */
+    private fun runMiddleware() {
+
+    }
+
 }

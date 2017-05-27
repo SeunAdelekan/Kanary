@@ -3,6 +3,8 @@ package com.iyanuadelekan.kanary.app
 import com.iyanuadelekan.kanary.core.KanaryMiddleware
 import com.iyanuadelekan.kanary.core.KanaryRouter
 import org.eclipse.jetty.server.handler.ContextHandler
+import javax.servlet.http.HttpServletRequest
+import javax.servlet.http.HttpServletResponse
 
 
 /**
@@ -13,13 +15,25 @@ import org.eclipse.jetty.server.handler.ContextHandler
 class KanaryApp : ContextHandler() {
 
     val routerList: ArrayList<KanaryRouter> = ArrayList()
-    val middlewareList: ArrayList<KanaryMiddleware> = ArrayList()
+    val middlewareList: ArrayList<(HttpServletRequest, HttpServletResponse) -> Unit> = ArrayList()
 
     /**
      * Adds [middleware] to the app
+     *
+     * Middleware takes the simple form of an anonymous function
+     * consisting of an instant of [HttpServletRequest] as its first
+     * parameter and an instance of [HttpServletResponse] as its second
+     * parameter
+     *
+     * All middleware added to the app will be executed in a non
+     * blocking fashion. A separate thread is executed for each
+     * middleware added to the app. This ensures no mounted middleware
+     * blocks the main application thread.
+     *
+     * @param middleware Middleware to be added
      * @return current KanaryApp instance
      */
-    fun use(middleware: KanaryMiddleware): KanaryApp {
+    fun use(middleware: (request: HttpServletRequest, response: HttpServletResponse) -> Unit): KanaryApp {
         middlewareList.add(middleware)
         return this
     }
