@@ -48,4 +48,9 @@ class KanaryApp : ContextHandler() {
         return this
     }
 
+    fun mount(vararg routers: KanaryRouter): KanaryApp {
+        routerList += routers
+        return this
+    }
+
 }
