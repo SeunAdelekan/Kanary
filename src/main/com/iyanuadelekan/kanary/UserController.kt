@@ -1,8 +1,8 @@
 package com.iyanuadelekan.kanary
 
 import com.iyanuadelekan.kanary.core.KanaryController
+import com.iyanuadelekan.kanary.helpers.http.request.getBodyAsJson
 import org.eclipse.jetty.server.Request
-import java.util.stream.Collectors
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -16,11 +16,11 @@ class UserController: KanaryController() {
         response.status = HttpServletResponse.SC_OK
 
         val out = response.writer
+        println(baseRequest.getBodyAsJson())
 
         out.println("<h1>User created!</h1>")
 
         baseRequest.isHandled = true
-        println(request.getReader().lines().collect(Collectors.joining(System.lineSeparator())))
     }
 
     fun retrieveUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {

@@ -1,4 +1,4 @@
-package com.iyanuadelekan.kanary.helpers
+package com.iyanuadelekan.kanary.helpers.http.request
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
