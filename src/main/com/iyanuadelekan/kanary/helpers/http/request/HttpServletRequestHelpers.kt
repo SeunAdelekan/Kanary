@@ -15,8 +15,7 @@ var root: JsonNode? = null
 /**
  * [HttpServletRequest] helper function for the easy retrieval
  * of HTTP request body content.
- *
- * This function is added to the receiver [HttpServletRequest]
+ * @return [JsonNode] containing JSON body
  */
 fun HttpServletRequest.getBody(): JsonNode? {
     val requestJSONBody = reader.lines().collect(Collectors.joining(System.lineSeparator()))

@@ -63,12 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpServletResponseHelpers.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HttpServletResponseHelpers.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/response/HttpServletResponseHelpers.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpServletRequestHelpers.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/request/HttpServletRequestHelpers.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#55#232#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/HttpServletHelpers.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/KanaryController.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/UserController.kt" />
+        <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/request/HttpServletRequestHelpers.kt" />
       </list>
     </option>
   </component>
@@ -1064,12 +1077,12 @@
       <workItem from="1495579624012" duration="2320000" />
       <workItem from="1495627823068" duration="943000" />
       <workItem from="1495628837575" duration="42508000" />
-      <workItem from="1495880515092" duration="12726000" />
+      <workItem from="1495880515092" duration="12925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62851000" />
+    <option name="totallyTimeSpent" value="63050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1104,8 +1117,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30547947" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1527,16 +1540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/request/HttpServletRequestHelpers.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <element signature="e#55#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/UserController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1552,6 +1555,16 @@
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/request/HttpServletRequestHelpers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#55#232#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
