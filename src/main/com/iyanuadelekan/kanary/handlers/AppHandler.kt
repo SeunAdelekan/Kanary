@@ -3,6 +3,8 @@ package com.iyanuadelekan.kanary.handlers
 import com.iyanuadelekan.kanary.app.KanaryApp
 import com.iyanuadelekan.kanary.constants.HttpConstants
 import com.iyanuadelekan.kanary.core.Route
+import com.iyanuadelekan.kanary.helpers.http.response.send
+import com.iyanuadelekan.kanary.helpers.http.response.withStatus
 import com.iyanuadelekan.kanary.utils.RequestUtils
 import org.eclipse.jetty.server.Request
 import org.eclipse.jetty.server.handler.AbstractHandler
@@ -38,9 +40,7 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
 
                 executeAfterAction(route, request, response)
             } else {
-                /**
-                 * TODO add 404 response for routes not found
-                 */
+                response?. withStatus(404)?. send("")
             }
         }
     }
