@@ -12,10 +12,22 @@ import javax.servlet.http.HttpServletResponse
 
 
 /**
- * Used to send a JSOn response to a client
+ * Used to send an ordinary text message to the client
+ * as a response
+ * @param message HTTP status code of response
+ */
+fun HttpServletResponse.send(message: String) {
+    contentType = "text/plain"
+    writer.print(message)
+}
+
+/**
+ * Used to send a JSON response to a client
  * @param responseNode A [JsonNode] containing the specified response
  */
-fun HttpServletResponse.sendJson(responseNode: JsonNode) {
+fun HttpServletResponse.sendJson(responseNode: JsonNode?) {
+    contentType = "application/json"
+
     val mapper: ObjectMapper = ObjectMapper()
     writer.print(mapper.writeValueAsString(responseNode))
 }
@@ -33,6 +45,9 @@ fun HttpServletResponse.end() {
  * @param status HTTP status code of response
  */
 fun HttpServletResponse.sendStatus(status: Int) {
+    contentType = "text/plain"
+
+    this.status = status
     writer.print(status)
 }
 
@@ -50,6 +65,15 @@ fun HttpServletResponse.sendFile(file: File) {
  */
 fun HttpServletResponse.redirect(url: String) {
     sendRedirect(url)
+}
+
+/**
+ * Used to send HTML to a client
+ * @param html URL to redirect request to
+ */
+fun HttpServletResponse.sendHtml(html: String) {
+    contentType = "text/html"
+    writer.print(html)
 }
 
 /**

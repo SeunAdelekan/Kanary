@@ -1,7 +1,9 @@
 package com.iyanuadelekan.kanary
 
 import com.iyanuadelekan.kanary.core.KanaryController
+import com.iyanuadelekan.kanary.helpers.http.request.getBody
 import com.iyanuadelekan.kanary.helpers.http.request.getBodyAsJson
+import com.iyanuadelekan.kanary.helpers.http.response.*
 import org.eclipse.jetty.server.Request
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
@@ -15,12 +17,10 @@ class UserController: KanaryController() {
         response.contentType = "text/html; charset=utf-8"
         response.status = HttpServletResponse.SC_OK
 
-        val out = response.writer
         println(baseRequest.getBodyAsJson())
+        response.redirect("http://google.com")
 
-        out.println("<h1>User created!</h1>")
-
-        baseRequest.isHandled = true
+        baseRequest.done()
     }
 
     fun retrieveUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
