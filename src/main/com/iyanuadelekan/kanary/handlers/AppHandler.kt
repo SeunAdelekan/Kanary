@@ -4,6 +4,7 @@ import com.iyanuadelekan.kanary.app.KanaryApp
 import com.iyanuadelekan.kanary.constants.HttpConstants
 import com.iyanuadelekan.kanary.core.Route
 import com.iyanuadelekan.kanary.helpers.http.response.send
+import com.iyanuadelekan.kanary.helpers.http.response.sendHtml
 import com.iyanuadelekan.kanary.helpers.http.response.withStatus
 import com.iyanuadelekan.kanary.utils.RequestUtils
 import org.eclipse.jetty.server.Request
@@ -17,6 +18,9 @@ import javax.servlet.http.HttpServletResponse
  */
 class AppHandler(val app: KanaryApp): AbstractHandler() {
 
+    private val supportedMethods = arrayOf(HttpConstants.GET.name, HttpConstants.POST.name,
+            HttpConstants.PUT.name, HttpConstants.DELETE.name, HttpConstants.PATCH.name, HttpConstants.OPTIONS.name)
+
     /**
      * Base handler for all incoming HTTP requests
      * @param target Target resource
@@ -28,21 +32,46 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
         runMiddleware(request)
 
         if (request != null) {
-            val route: Route? = resolveTargetRoute(request.method, "$target")
+            if(isMethodSupported(request.method)) {
+                if(request.method == HttpConstants.OPTIONS.name) {
+                    response?.addHeader("Allow", "${HttpConstants.OPTIONS.name}, ${HttpConstants.GET.name}, " +
+                            "${HttpConstants.POST.name}, ${HttpConstants.PUT.name}, ${HttpConstants.DELETE.name}, " +
+                            HttpConstants.PATCH.name)
 
-            if (route != null) {
-                val action = route.action
-                executeBeforeAction(route, request, response)
+                    response?. withStatus(200)?. send("")
+                } else {
+                    val route: Route? = resolveTargetRoute(request.method, "$target")
 
-                if(baseRequest != null && response != null) {
-                    action.invoke(baseRequest, request, response)
+                    if (route != null) {
+                        val action = route.action
+                        executeBeforeAction(route, request, response)
+
+                        if(baseRequest != null && response != null) {
+                            action.invoke(baseRequest, request, response)
+                        }
+
+                        executeAfterAction(route, request, response)
+                    } else {
+                        response?. withStatus(404)?. send("Method not found.")
+                    }
                 }
-
-                executeAfterAction(route, request, response)
             } else {
-                response?. withStatus(404)?. send("")
+                response?.addHeader("Allow", "${HttpConstants.OPTIONS.name}, ${HttpConstants.GET.name}, " +
+                        "${HttpConstants.POST.name}, ${HttpConstants.PUT.name}, ${HttpConstants.DELETE.name}, " +
+                        HttpConstants.PATCH.name)
+
+                response?. withStatus(405)?. send("Method not allowed.")
             }
         }
+    }
+
+    /**
+     * Tests if a request method is supported
+     * @param method HTTP method to be tested
+     * @return true if supported and false otherwise
+     */
+    private fun isMethodSupported(method: String): Boolean {
+        return supportedMethods.filter({ it == method }).isNotEmpty()
     }
 
     /**
