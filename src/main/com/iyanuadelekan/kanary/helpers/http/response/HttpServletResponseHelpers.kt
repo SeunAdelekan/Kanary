@@ -2,7 +2,6 @@ package com.iyanuadelekan.kanary.helpers.http.response
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.eclipse.jetty.server.Request
 import java.io.File
 import javax.servlet.http.HttpServletResponse
 
