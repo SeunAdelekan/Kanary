@@ -74,3 +74,13 @@ infix fun HttpServletResponse.sendHtml(html: String) {
     contentType = "text/html"
     writer.print(html)
 }
+
+/**
+ * Sets the HTTP status code of a [HttpServletResponse] object
+ * @param status Required status code
+ * @return current instance of [HttpServletResponse]
+ */
+infix fun HttpServletResponse.withStatus(status: Int): HttpServletResponse {
+    this.status = status
+    return this
+}

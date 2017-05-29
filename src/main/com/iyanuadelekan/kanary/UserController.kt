@@ -14,12 +14,7 @@ import javax.servlet.http.HttpServletResponse
 class UserController: KanaryController() {
 
     fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
-        response.contentType = "text/html; charset=utf-8"
-        response.status = HttpServletResponse.SC_OK
-
-        println(baseRequest.getBodyAsJson())
-        response.redirect("http://google.com")
-
+        response withStatus 200 redirect("http://google.com")
         baseRequest.done()
     }
 
