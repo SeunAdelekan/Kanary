@@ -75,10 +75,3 @@ fun HttpServletResponse.sendHtml(html: String) {
     contentType = "text/html"
     writer.print(html)
 }
-
-/**
- * To be called once a request is handled
- */
-fun Request.done() {
-    isHandled = true
-}

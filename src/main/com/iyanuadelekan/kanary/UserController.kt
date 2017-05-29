@@ -1,7 +1,7 @@
 package com.iyanuadelekan.kanary
 
 import com.iyanuadelekan.kanary.core.KanaryController
-import com.iyanuadelekan.kanary.helpers.http.request.getBody
+import com.iyanuadelekan.kanary.helpers.http.request.done
 import com.iyanuadelekan.kanary.helpers.http.request.getBodyAsJson
 import com.iyanuadelekan.kanary.helpers.http.response.*
 import org.eclipse.jetty.server.Request
