@@ -2,7 +2,10 @@ package com.iyanuadelekan.kanary.helpers.http.response
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
+import sun.security.util.Length
 import java.io.File
+import java.io.FileInputStream
+import javax.servlet.ServletOutputStream
 import javax.servlet.http.HttpServletResponse
 
 /**
@@ -52,8 +55,17 @@ infix fun HttpServletResponse.sendStatus(status: Int) {
  * Used to send a file resource to the client
  * @param file File to be sent back to the client
  */
-infix fun HttpServletResponse.sendFile(file: File) {
-    writer.print(file)
+fun HttpServletResponse.sendFile(file: File, contentType: String="", contentLength: Int=0) {
+    this.contentType = contentType
+    this.setContentLength(contentLength)
+
+    val fileBytes = ByteArray(file.length().toInt())
+    val fis = FileInputStream(file)
+    fis.read(fileBytes)
+
+    val servletOutputStream: ServletOutputStream = outputStream
+    servletOutputStream.write(fileBytes)
+    servletOutputStream.flush()
 }
 
 /**

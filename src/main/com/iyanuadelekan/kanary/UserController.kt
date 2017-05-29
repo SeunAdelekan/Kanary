@@ -1,12 +1,11 @@
 package com.iyanuadelekan.kanary
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import com.iyanuadelekan.kanary.core.KanaryController
 import com.iyanuadelekan.kanary.helpers.http.request.done
 import com.iyanuadelekan.kanary.helpers.http.request.getBody
-import com.iyanuadelekan.kanary.helpers.http.request.getBodyAsJson
 import com.iyanuadelekan.kanary.helpers.http.response.*
 import org.eclipse.jetty.server.Request
+import java.io.File
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -16,7 +15,7 @@ import javax.servlet.http.HttpServletResponse
 class UserController: KanaryController() {
 
     fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
-        response withStatus 200 sendJson request.getBody()
+        response.withStatus(200).sendFile(File("pom.xml"))
         baseRequest.done()
     }
 
