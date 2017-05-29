@@ -8,11 +8,17 @@ import javax.servlet.http.HttpServletRequest
  * @author Iyanu Adelekan on 29/05/2017.
  */
 
-val consoleRequestLogger: (HttpServletRequest?) -> Unit = {
-    if(it != null) {
+/**
+ * Logs succinct request details to console
+ */
+val simpleConsoleRequestLogger: (HttpServletRequest?) -> Unit = {
+    if(it != null && it.method != null && it.pathInfo != null) {
         val dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
 
         println("Started ${it.method} '${it.pathInfo}' at ${dateFormat.format(Date())}")
-        println("Query parameters: ${it.queryString}")
+        if(it.queryString != null) {
+            println("Query string: ${it.queryString}")
+        }
+
     }
 }
