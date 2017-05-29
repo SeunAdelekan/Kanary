@@ -4,7 +4,6 @@ import com.iyanuadelekan.kanary.app.KanaryApp
 import com.iyanuadelekan.kanary.constants.HttpConstants
 import com.iyanuadelekan.kanary.core.Route
 import com.iyanuadelekan.kanary.helpers.http.response.send
-import com.iyanuadelekan.kanary.helpers.http.response.sendHtml
 import com.iyanuadelekan.kanary.helpers.http.response.withStatus
 import com.iyanuadelekan.kanary.utils.RequestUtils
 import org.eclipse.jetty.server.Request
