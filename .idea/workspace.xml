@@ -66,9 +66,11 @@
       <file leaf-file-name="HttpServletResponseHelpers.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/response/HttpServletResponseHelpers.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="352">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+              <folding>
+                <element signature="e#56#219#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -845,12 +847,12 @@
       <workItem from="1495579624012" duration="2320000" />
       <workItem from="1495627823068" duration="943000" />
       <workItem from="1495628837575" duration="42508000" />
-      <workItem from="1495880515092" duration="15885000" />
+      <workItem from="1495880515092" duration="16039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66010000" />
+    <option name="totallyTimeSpent" value="66164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1331,9 +1333,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/response/HttpServletResponseHelpers.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="352">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#56#219#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

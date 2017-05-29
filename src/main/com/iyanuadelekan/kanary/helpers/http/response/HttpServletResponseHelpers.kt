@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse
  * as a response
  * @param message HTTP status code of response
  */
-fun HttpServletResponse.send(message: String) {
+infix fun HttpServletResponse.send(message: String) {
     contentType = "text/plain"
     writer.print(message)
 }
@@ -24,7 +24,7 @@ fun HttpServletResponse.send(message: String) {
  * Used to send a JSON response to a client
  * @param responseNode A [JsonNode] containing the specified response
  */
-fun HttpServletResponse.sendJson(responseNode: JsonNode?) {
+infix fun HttpServletResponse.sendJson(responseNode: JsonNode?) {
     contentType = "application/json"
 
     val mapper: ObjectMapper = ObjectMapper()
@@ -43,7 +43,7 @@ fun HttpServletResponse.end() {
  * the client as a response
  * @param status HTTP status code of response
  */
-fun HttpServletResponse.sendStatus(status: Int) {
+infix fun HttpServletResponse.sendStatus(status: Int) {
     contentType = "text/plain"
 
     this.status = status
@@ -54,7 +54,7 @@ fun HttpServletResponse.sendStatus(status: Int) {
  * Used to send a file resource to the client
  * @param file File to be sent back to the client
  */
-fun HttpServletResponse.sendFile(file: File) {
+infix fun HttpServletResponse.sendFile(file: File) {
     writer.print(file)
 }
 
@@ -62,7 +62,7 @@ fun HttpServletResponse.sendFile(file: File) {
  * Used to redirect a client HTTP request to a URL
  * @param url URL to redirect request to
  */
-fun HttpServletResponse.redirect(url: String) {
+infix fun HttpServletResponse.redirect(url: String) {
     sendRedirect(url)
 }
 
@@ -70,7 +70,7 @@ fun HttpServletResponse.redirect(url: String) {
  * Used to send HTML to a client
  * @param html URL to redirect request to
  */
-fun HttpServletResponse.sendHtml(html: String) {
+infix fun HttpServletResponse.sendHtml(html: String) {
     contentType = "text/html"
     writer.print(html)
 }
