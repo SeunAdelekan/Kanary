@@ -26,9 +26,7 @@ infix fun HttpServletResponse.send(message: String) {
  */
 infix fun HttpServletResponse.sendJson(responseNode: JsonNode?) {
     contentType = "application/json"
-
-    val mapper: ObjectMapper = ObjectMapper()
-    writer.print(mapper.writeValueAsString(responseNode))
+    writer.print(ObjectMapper().writeValueAsString(responseNode))
 }
 
 /**
