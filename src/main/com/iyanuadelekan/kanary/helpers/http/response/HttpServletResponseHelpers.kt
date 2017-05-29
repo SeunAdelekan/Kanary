@@ -56,16 +56,19 @@ infix fun HttpServletResponse.sendStatus(status: Int) {
  * @param file File to be sent back to the client
  */
 fun HttpServletResponse.sendFile(file: File, contentType: String="", contentLength: Int=0) {
+    println(file.readLines())
     this.contentType = contentType
     this.setContentLength(contentLength)
 
     val fileBytes = ByteArray(file.length().toInt())
     val fis = FileInputStream(file)
     fis.read(fileBytes)
+    println(fis.read())
 
     val servletOutputStream: ServletOutputStream = outputStream
     servletOutputStream.write(fileBytes)
     servletOutputStream.flush()
+    servletOutputStream.close()
 }
 
 /**

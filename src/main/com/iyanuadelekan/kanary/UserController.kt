@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse
 class UserController: KanaryController() {
 
     fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
-        response.withStatus(200).sendFile(File("pom.xml"))
+        response.withStatus(200).sendFile(File("./pom.xml"))
         baseRequest.done()
     }
 
