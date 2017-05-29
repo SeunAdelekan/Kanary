@@ -2,7 +2,6 @@ package com.iyanuadelekan.kanary.helpers.http.response
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
-import sun.security.util.Length
 import java.io.File
 import java.io.FileInputStream
 import javax.servlet.ServletOutputStream
@@ -56,19 +55,20 @@ infix fun HttpServletResponse.sendStatus(status: Int) {
  * @param file File to be sent back to the client
  */
 fun HttpServletResponse.sendFile(file: File, contentType: String="", contentLength: Int=0) {
-    println(file.readLines())
-    this.contentType = contentType
-    this.setContentLength(contentLength)
+    if(contentType != "") {
+        this.contentType = contentType
+    }
+    if (contentLength != 0) {
+        this.setContentLength(contentLength)
+    }
 
     val fileBytes = ByteArray(file.length().toInt())
     val fis = FileInputStream(file)
     fis.read(fileBytes)
-    println(fis.read())
 
     val servletOutputStream: ServletOutputStream = outputStream
     servletOutputStream.write(fileBytes)
     servletOutputStream.flush()
-    servletOutputStream.close()
 }
 
 /**
