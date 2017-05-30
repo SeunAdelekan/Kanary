@@ -145,3 +145,9 @@ Multiple middleware can be added at a go:
 app.use({ println("I'm middleware!") }, { println("Request path info: ${it.pathInfo}") } )
 ```
 It is important to note that all middleware execute in a non blocking fashion parrallel to the main application thread.
+
+#### Bundled middleware
+The sole middleware bundled with Kanary is 'simpleConsoleRequestLogger'. It prints out succinct information about each request received to the console.
+```kotlin
+app.use(simpleConsoleRequestLogger)
+```
