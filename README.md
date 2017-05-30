@@ -58,7 +58,7 @@ fun main(args: Array<String>) {
   val server = Server()
 
   server.handler = AppHandler(app)
-  server.listen
+  server.listen(8080)
 }
 ```
 
@@ -115,7 +115,7 @@ All routing is done by one or more specified routers. A router is an instance of
 val userRouter = KanaryRouter()
 ```
 
-### Declaring route paths
+#### Declaring route paths
 ```kotlin
 userRouter on "users/" use userController //router uses userController to cater for all routes prefixed by '/users'
 userRouter.post("new/", userController::createUser) //maps POST '/users/new' to the createUser action in userController
@@ -124,3 +124,15 @@ The above can also be done with:
 ```kotlin
 userRouter.post("users/new/", userController::createUser, userController)
 ```
+#### Mounting routers to application
+A single router can be mounted to a KanaryApp instance as follows:
+```kotlin
+app.mount(userRouter)
+```
+Numerous routers can be mounted at a go:
+```kotlin
+app.mount(routerA, routerB, routerC, ..., routerN)
+```
+
+### Middleware
+
