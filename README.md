@@ -154,9 +154,15 @@ app.use(simpleConsoleRequestLogger)
 
 ## Working with requests and responses
 ### Handling requests
-In most cases, request handling should be done by the use of the immutable HttpServletRequest instance passed to your controller actions. This instance is an object of Java's (HttpServletRequest)[http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html] with Kanary specific helper functions. These additional functions provided are:
+In most cases, request handling should be done by the use of the immutable HttpServletRequest instance passed to your controller actions. This instance is an object of Java's [HttpServletRequest](http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html) with Kanary specific helper functions. These additional functions provided are:
 
 | Function | Description | Return type |
 | ------ | ------ | ------|
 | getBody() | Used to retrieve HTTP request body content | JsonNode? |
 | getBodyAsJson() | Used to retrieve HTTP request body content in the form of a JSON string | String |
+
+A mutable request object is exposed in the form of a [Request](http://download.eclipse.org/jetty/stable-9/apidocs/org/eclipse/jetty/server/Request.html) instance. Request implements HttpServletRequest and as such has behaviours and characteristics similar to those possessed by the HttpServletRequest instance passed to an action. In addition to the functions shown in the table above, the Request instance passed has:
+
+| Function | Description | Return type |
+| ------ | ------ | ------|
+| done() | Used to specify that a request has been successfully handled | Unit |
