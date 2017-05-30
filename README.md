@@ -135,4 +135,13 @@ app.mount(routerA, routerB, routerC, ..., routerN)
 ```
 
 ### Middleware
-
+All middleware take the form of a lambda. A single nullable instance of HttpServletRequest is passed to every middleware added to the application.
+```kotlin
+app.use { println("I'm middleware!") }
+app.use { println("Request path info: ${it.pathInfo}") }
+```
+Multiple middleware can be added at a go:
+```kotlin
+app.use({ println("I'm middleware!") }, { println("Request path info: ${it.pathInfo}") } )
+```
+It is important to note that all middleware execute in a non blocking fashion parrallel to the main application thread.
