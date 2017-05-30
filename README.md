@@ -67,6 +67,8 @@ A controller is any instance of a class that extends KanaryController. The class
 ```kotlin
 class DummyController : KanaryController()
 ```
+
+### Creating controller actions
 Though the fact that the above class is a controller is correct, generally you'll want to specify actions within your controller to route requests to.
 An action is a controller function that takes three parameters as its arguments:
   * An instance of Request (a mutable request object)
@@ -82,3 +84,28 @@ class UserController : KanaryController() {
     }
     
 }
+```
+
+### Controller action lifecycle callbacks
+There are two distinct action lifecycle callbacks that can be declared within a KanaryController. These are:
+  * beforeAction - if declared, executes immediately before an action is executed
+  * afterAction - if declared, executes immediately after an action is executed
+
+Declaring these two callbacks is as easy as declaring a function within a controller:
+```kotlin
+class UserController : KanaryController() {
+
+    override fun beforeAction(request: HttpServletRequest, response: HttpServletResponse?) {
+        println("I execute before anything else!")
+    }
+    
+    override fun afterAction(request: HttpServletRequest, response: HttpServletResponse?) {
+        println("I execute once an action is completed!")
+    }
+
+    fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
+        // action code goes here
+    }
+    
+}
+```
