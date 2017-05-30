@@ -213,7 +213,7 @@ Kanary was designed to utilise a respectful approach in aiding engineers and dev
 * Adding support for other popular application servers like Tomcat and Netty
 
 ## Contributing
-Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.md file to get started.
+Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.rst file to get started.
 Individuals interested in becoming a part of the core development team can connect with me on LinkedIn [here](linkedin.com/in/iyanu-adelekan-13a85a112) and send a message expressing interest.
 
 ## People
