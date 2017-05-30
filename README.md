@@ -199,8 +199,18 @@ class UserController : KanaryController() {
 * [Jackson-databind](https://github.com/FasterXML/jackson-databind/blob/master/README.md) (for JSON serialization/deserialization)
 
 ## Road map
-
 * Addition of tests
+* Creation of a vast array of sample applications demonstrating the use of Kanary
 * Creation of cli utilities to support the rapid creation of Kanary applications
 * Addition of hot reloading capabilities on change and save of app program files
 * Adding support for other popular application servers like Tomcat and Netty
+
+## Contributing
+Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.md file to get started.
+Individuals interested in becoming a part of the core development team can connect with me on LinkedIn [here]() and send me a message expressing interest.
+
+## People
+Kanary was created by [Iyanu Adelekan](https://github.com/SeunAdelekan). He is the current project lead.
+
+## License
+[Apache 2.0](LICENSE)
