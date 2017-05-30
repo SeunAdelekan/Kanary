@@ -181,3 +181,16 @@ Responses are sent to a client with the use of an [HttpServletResponse](http://d
 | redirect(url: String) | Redirects the request to the specified URL | Unit |
 | sendHtml(html: String) | Sends HTML content to a client | Unit |
 
+All functions above except 'sendFile' can be written in infix notation (the recommended way of writing code in Kanary). This permits the writing of beautiful, clear and expressive code for responding to clients.
+Thus to send a plain text message to a client:
+```kotlin
+class UserController : KanaryController() {
+
+    fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
+        response withStatus 200 send "This is an API response"
+        baseRequest.done()
+    }
+    
+}
+```
+
