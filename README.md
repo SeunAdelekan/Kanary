@@ -151,3 +151,12 @@ The sole middleware bundled with Kanary is 'simpleConsoleRequestLogger'. It prin
 ```kotlin
 app.use(simpleConsoleRequestLogger)
 ```
+
+## Working with requests and responses
+### Handling requests
+In most cases, request handling should be done by the use of the immutable HttpServletRequest instance passed to your controller actions. This instance is an object of Java's (HttpServletRequest)[http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html] with Kanary specific helper functions. These additional functions provided are:
+
+| Function | Description | Return type |
+| ------ | ------ | ------|
+| getBody() | Used to retrieve HTTP request body content | JsonNode? |
+| getBodyAsJson() | Used to retrieve HTTP request body content in the form of a JSON string | String |
