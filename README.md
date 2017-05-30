@@ -67,3 +67,18 @@ A controller is any instance of a class that extends KanaryController. The class
 ```kotlin
 class DummyController : KanaryController()
 ```
+Though the fact that the above class is a controller is correct, generally you'll want to specify actions within your controller to route requests to.
+An action is a controller function that takes three parameters as its arguments:
+  * An instance of Request (a mutable request object)
+  * An instance of HttpServletRequest (an immutable request object)
+  * An instance of HttpServletResponse (a response object)
+  
+A valid action is shown within the controller below
+```kotlin
+class UserController : KanaryController() {
+
+    fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
+        // action code goes here
+    }
+    
+}
