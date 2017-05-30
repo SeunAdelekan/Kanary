@@ -194,3 +194,13 @@ class UserController : KanaryController() {
 }
 ```
 
+## Dependencies
+* [Jetty](http://eclipse.org/jetty) (as an application server engine)
+* [Jackson-databind](https://github.com/FasterXML/jackson-databind/blob/master/README.md) (for JSON serialization/deserialization)
+
+## Road map
+
+* Addition of tests
+* Creation of cli utilities to support the rapid creation of Kanary applications
+* Addition of hot reloading capabilities on change and save of app program files
+* Adding support for other popular application servers like Tomcat and Netty
