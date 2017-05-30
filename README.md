@@ -166,3 +166,18 @@ A mutable request object is exposed in the form of a [Request](http://download.e
 | Function | Description | Return type |
 | ------ | ------ | ------|
 | done() | Used to specify that a request has been successfully handled | Unit |
+
+### Responding to a request
+Responses are sent to a client with the use of an [HttpServletResponse](http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletResponse.html) passed to an action. In addition to all characteristics and behaviours exposed by this instance, the following Kanary specific helper functions are available:
+
+| Function | Description | Return type |
+| ------ | ------ | ------|
+| withStatus(status: Int) | Sets the response status code | Unit |
+| send(message: String) | Sends a plain text message to a client | Unit |
+| sendJson(responseNode: JsonNode?) | Sends a json response to a client | Unit |
+| end() | Ends the HTTP response process | Unit |
+| sendStatus(status: Int) | Sends the response status code as plain text | Unit |
+| sendFile(file: File, contentType: String="", contentLength: Int=0) | Sends a file to a client | Unit |
+| redirect(url: String) | Redirects the request to the specified URL | Unit |
+| sendHtml(html: String) | Sends HTML content to a client | Unit |
+
