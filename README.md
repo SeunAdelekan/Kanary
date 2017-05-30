@@ -198,16 +198,23 @@ class UserController : KanaryController() {
 * [Jetty](http://eclipse.org/jetty) (as an application server engine)
 * [Jackson-databind](https://github.com/FasterXML/jackson-databind/blob/master/README.md) (for JSON serialization/deserialization)
 
+## Philosophy
+Kanary was created in order to facilitate the quick implementation of stable and non verbose RESTful APIs with the Kotlin programming language. 
+
+### Convention versus Configuration
+Kanary was designed to utilise a respectful approach in aiding engineers and developers to create micro-service based applications. As a consequence of this approach, no conventions are forced upon developers. The means by which an application is implemented is at the sole discretion of the implementer.
+
 ## Road map
 * Addition of tests
 * Creation of a vast array of sample applications demonstrating the use of Kanary
 * Creation of cli utilities to support the rapid creation of Kanary applications
 * Addition of hot reloading capabilities on change and save of app program files
+* Implementation of a template engine system for those who wish to use Kanary in an MVC oriented way
 * Adding support for other popular application servers like Tomcat and Netty
 
 ## Contributing
 Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.md file to get started.
-Individuals interested in becoming a part of the core development team can connect with me on LinkedIn [here]() and send me a message expressing interest.
+Individuals interested in becoming a part of the core development team can connect with me on LinkedIn [here](linkedin.com/in/iyanu-adelekan-13a85a112) and send a message expressing interest.
 
 ## People
 Kanary was created by [Iyanu Adelekan](https://github.com/SeunAdelekan). He is the current project lead.
