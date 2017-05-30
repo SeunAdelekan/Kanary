@@ -187,7 +187,7 @@ Thus to send a plain text message to a client:
 class UserController : KanaryController() {
 
     fun createUser(baseRequest: Request, request: HttpServletRequest, response: HttpServletResponse) {
-        response withStatus 200 send "This is an API response"
+        response withStatus 201 send "User successfully created!"
         baseRequest.done()
     }
     
