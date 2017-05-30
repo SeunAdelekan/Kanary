@@ -109,3 +109,18 @@ class UserController : KanaryController() {
     
 }
 ```
+### Routing
+All routing is done by one or more specified routers. A router is an instance of KanaryRouter:
+```kotlin
+val userRouter = KanaryRouter()
+```
+
+### Declaring route paths
+```kotlin
+userRouter on "users/" use userController //router uses userController to cater for all routes prefixed by '/users'
+userRouter.post("new/", userController::createUser) //maps POST '/users/new' to the createUser action in userController
+```
+The above can also be done with:
+```kotlin
+userRouter.post("users/new/", userController::createUser, userController)
+```
