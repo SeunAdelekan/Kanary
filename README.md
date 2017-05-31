@@ -42,7 +42,7 @@ For non-Maven use cases, you can download jars from bintray
 ## Features
 
   * Expressive routing
-  * Focus on clode clarity
+  * Focus on code clarity
   * Support for controllers
   * Inclusion of HTTP helpers
   * Full support for asynchronous middleware
@@ -209,6 +209,7 @@ Kanary was designed to utilise a respectful approach in aiding engineers and dev
 * Creation of a vast array of sample applications demonstrating the use of Kanary
 * Creation of cli utilities to support the rapid creation of Kanary applications
 * Addition of hot reloading capabilities on change and save of app program files
+* Implementation of a mailer
 * Implementation of a template engine system for those who wish to use Kanary in an MVC oriented way
 * Adding support for other popular application servers like Tomcat and Netty
 
