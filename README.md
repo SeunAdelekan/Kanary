@@ -29,9 +29,10 @@ Framework resources are contained in the package com.iyanuadelekan.kanary and ca
 <dependencies>
   ...
   <dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>${jackson.version}</version>
+    <groupId>com.iyanuadelekan</groupId>
+    <artifactId>kanary</artifactId>
+    <version>0.9.0</version>
+    <type>pom</type>
   </dependency>
   ...
 </dependencies>

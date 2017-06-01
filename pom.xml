@@ -5,7 +5,7 @@
     <groupId>com.iyanuadelekan</groupId>
     <artifactId>kanary</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>0.9.0</version>
 
     <properties>
         <kotlin.version>1.1.2-4</kotlin.version>
@@ -30,6 +30,13 @@
         <tag>HEAD</tag>
         <url>https://github.com/SeunAdelekan/Kanary</url>
     </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>iyanuadelekan-kanary</id>
+            <url>https://api.bintray.com/maven/iyanuadelekan/Kanary/kanary/</url>
+        </repository>
+    </distributionManagement>
 
     <pluginRepositories>
         <pluginRepository>
