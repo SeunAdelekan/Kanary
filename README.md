@@ -1,4 +1,5 @@
 # Kanary
+![alt text](images/Kanary.JPG?raw=true "")
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A minimalist🔬 Kotlin web framework for building🔩⚙ scalable📈 and expressive🎨 RESTful APIs
