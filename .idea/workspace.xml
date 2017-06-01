@@ -39,12 +39,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HttpServletResponseHelpers.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HttpServletResponseHelpers.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/response/HttpServletResponseHelpers.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+                <folding>
+                  <marker date="1496324098000" expanded="true" signature="304:695" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="920:1117" ph="..." />
+                  <marker date="1496324098000" expanded="true" signature="941:1095" ph="..." />
+                  <marker date="1496324098000" expanded="true" signature="1830:1939" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="2715:2866" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="2819:2859" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="3324:3787" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="3418:3476" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="3572:3637" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="3740:3780" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="7917:8128" ph="{...}" />
+                  <marker date="1496324098000" expanded="true" signature="8021:8121" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -110,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/agents/RequestAgent.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/agents/ResponseAgent.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/constants/ResponseCodes.kt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/app/Server.kt" />
         <option value="$PROJECT_DIR$/src/main/UserController.kt" />
@@ -137,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/helpers/http/response/HttpServletResponseHelpers.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/handlers/AppHandler.kt" />
         <option value="$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/middleware/RequestLoggers.kt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -179,20 +205,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Kanary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kanary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kanary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -708,12 +720,12 @@
       <workItem from="1496080636008" duration="5182000" />
       <workItem from="1496086838157" duration="861000" />
       <workItem from="1496087940941" duration="1801000" />
-      <workItem from="1496171650400" duration="1979000" />
+      <workItem from="1496171650400" duration="2141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84228000" />
+    <option name="totallyTimeSpent" value="84390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +738,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -749,7 +761,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30273974" sideWeight="0.49192247" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28594506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28594506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -980,17 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletResponse.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1048,6 +1049,30 @@
         <state relative-caret-position="300">
           <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <folding>
+              <marker date="1496324098000" expanded="true" signature="304:695" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="920:1117" ph="..." />
+              <marker date="1496324098000" expanded="true" signature="941:1095" ph="..." />
+              <marker date="1496324098000" expanded="true" signature="1830:1939" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="2715:2866" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="2819:2859" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="3324:3787" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="3418:3476" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="3572:3637" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="3740:3780" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="7917:8128" ph="{...}" />
+              <marker date="1496324098000" expanded="true" signature="8021:8121" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
