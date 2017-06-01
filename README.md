@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
 ```
 
 ## Installation
-Framework resources are contained in the package com.iyanuadelekan.kanary and can be included in your application via Maven, Gradle and Ivy. Include the following in your application's pom.xml file:
+Framework resources are contained in the package com.iyanuadelekan.kanary and can be included in your application via Maven, Gradle and Ivy. Include the necessary out of the following in your application:
 ### Maven
 Include Jcenter as a plugin repository
 ```xml
