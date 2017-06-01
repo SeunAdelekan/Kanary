@@ -1,6 +1,7 @@
 # Kanary
 ![alt text](images/Kanary.JPG?raw=true "")
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[ ![Download](https://api.bintray.com/packages/iyanuadelekan/Kanary/kanary/images/download.svg) ](https://bintray.com/iyanuadelekan/Kanary/kanary/_latestVersion)
 
 A minimalist🔬 Kotlin web framework for building🔩⚙ scalable📈 and expressive🎨 RESTful APIs
 
@@ -24,7 +25,19 @@ fun main(args: Array<String>) {
 ```
 
 ## Installation
-Framework resources are contained in the package com.iyanuadelekan.kanary and can be included in your application via maven. Include the following in your application's pom.xml file:
+Framework resources are contained in the package com.iyanuadelekan.kanary and can be included in your application via Maven, Gradle and Ivy. Include the following in your application's pom.xml file:
+### Maven
+Include Jcenter as a plugin repository
+```xml
+<pluginRepositories>
+   <pluginRepository>
+      <id>jcenter</id>
+      <name>JCenter</name>
+      <url>https://jcenter.bintray.com/</url>
+   </pluginRepository>
+</pluginRepositories>
+```
+Add Kanary as a project dependency
 ```xml
 <dependencies>
   ...
@@ -36,6 +49,18 @@ Framework resources are contained in the package com.iyanuadelekan.kanary and ca
   </dependency>
   ...
 </dependencies>
+```
+
+### Gradle
+```groovy
+compile 'com.iyanuadelekan:kanary:0.9.0'
+```
+
+### Ivy
+```xml
+<dependency org='com.iyanuadelekan' name='kanary' rev='0.9.0'>
+  <artifact name='kanary' ext='pom' ></artifact>
+</dependency>
 ```
 
 ## Non maven
