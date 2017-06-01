@@ -63,8 +63,8 @@ compile 'com.iyanuadelekan:kanary:0.9.0'
 </dependency>
 ```
 
-## Non maven
-For non-Maven use cases, you can download jars from bintray
+## Others
+For other use cases, you can download jars from bintray
 
 ## Features
 
