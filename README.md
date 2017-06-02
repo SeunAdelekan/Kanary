@@ -29,13 +29,13 @@ Framework resources are contained in the package com.iyanuadelekan.kanary and ca
 ### Maven
 Include Jcenter as a plugin repository
 ```xml
-<pluginRepositories>
-   <pluginRepository>
-      <id>jcenter</id>
-      <name>JCenter</name>
-      <url>https://jcenter.bintray.com/</url>
-   </pluginRepository>
-</pluginRepositories>
+<repositories>
+   <repository>
+     <id>jcenter</id>
+     <name>JCenter</name>
+     <url>https://jcenter.bintray.com/</url>
+   </repository>
+</repositories>
 ```
 Add Kanary as a project dependency
 ```xml
@@ -45,7 +45,6 @@ Add Kanary as a project dependency
     <groupId>com.iyanuadelekan</groupId>
     <artifactId>kanary</artifactId>
     <version>0.9.0</version>
-    <type>pom</type>
   </dependency>
   ...
 </dependencies>
