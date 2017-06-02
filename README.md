@@ -58,7 +58,7 @@ compile 'com.iyanuadelekan:kanary:0.9.0'
 ### Ivy
 ```xml
 <dependency org='com.iyanuadelekan' name='kanary' rev='0.9.0'>
-  <artifact name='kanary' ext='pom' ></artifact>
+  <artifact name='kanary'></artifact>
 </dependency>
 ```
 
