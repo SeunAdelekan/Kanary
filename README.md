@@ -52,7 +52,13 @@ Add Kanary as a project dependency
 
 ### Gradle
 ```groovy
-compile 'com.iyanuadelekan:kanary:0.9.0'
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.iyanuadelekan:kanary:0.9.0'
+}
 ```
 
 ### Ivy
