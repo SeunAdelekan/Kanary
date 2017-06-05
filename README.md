@@ -82,7 +82,7 @@ For other use cases, you can download jars from bintray
   * Availability of action lifecycle callback methods
   
 ## Quick start
-A breakdown of project packages is [here](##packages).
+A breakdown of project packages is [here](#packages).
 
 ### Creating a Kanary app and starting a server
 A simple Kanary app that listens on a port is created by initializing an istance of KanaryApp, creating a Server object, creating an AppHandler instance, setting that instance as the server's handler and starting the server to listen on a specified port. 
