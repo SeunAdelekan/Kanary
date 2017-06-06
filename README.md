@@ -193,8 +193,8 @@ In most cases, request handling should be done by the use of the immutable HttpS
 
 | Function | Description | Return type |
 | ------ | ------ | ------|
-| getBody() | Used to retrieve HTTP request body content | JsonNode? |
-| getBodyAsJson() | Used to retrieve HTTP request body content in the form of a JSON string | String |
+| getBody() | Used to retrieve HTTP request body content | String |
+| getBodyAsJson() | Used to retrieve HTTP request body content in the form of a JSON string | JsonNode? |
 
 A mutable request object is exposed in the form of a [Request](http://download.eclipse.org/jetty/stable-9/apidocs/org/eclipse/jetty/server/Request.html) instance. Request implements HttpServletRequest and as such has behaviours and characteristics similar to those possessed by the HttpServletRequest instance passed to an action. In addition to the functions shown in the table above, the Request instance passed has:
 
