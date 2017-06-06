@@ -236,7 +236,7 @@ class UserController : KanaryController() {
 | KanaryController | com.iyanuadelekan.kanary.core |
 | KanaryRouter | com.iyanuadelekan.kanary.core |
 | AppHandler | com.iyanuadelekan.kanary.handlers |
-| server | com.iyanuadelekan.kanary.server |
+| Server | com.iyanuadelekan.kanary.server |
 
 ## Dependencies
 * [Jetty](http://eclipse.org/jetty) (as an application server engine)
