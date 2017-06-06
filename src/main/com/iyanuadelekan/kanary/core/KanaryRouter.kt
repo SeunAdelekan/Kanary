@@ -112,13 +112,19 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      */
     infix fun on(path: String): KanaryRouter {
         if(path != "/" && isRoutePathValid(path)) {
-			val formattedPath = formatPath(path)
+            val formattedPath = formatPath(path)
             basePath = "/$formattedPath"
             return this
         }
         throw InvalidRouteException("The path '$path' is an invalid route path")
     }
 
+    /**
+     * Append / to a path, if necessary
+     * Used to fix Issue #3 and keep it backwards compatible
+     * @param path Route path with may not end with /
+     * @return path that ends with /
+     */
     private fun formatPath(path: String): String {
         if(path.endsWith("/")) {
             return path
