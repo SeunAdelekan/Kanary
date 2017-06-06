@@ -112,10 +112,18 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      */
     infix fun on(path: String): KanaryRouter {
         if(path != "/" && isRoutePathValid(path)) {
-            basePath = "/$path"
+			val formattedPath = formatPath(path)
+            basePath = "/$formattedPath"
             return this
         }
         throw InvalidRouteException("The path '$path' is an invalid route path")
+    }
+
+    private fun formatPath(path: String): String {
+        if(path.endsWith("/")) {
+            return path
+        }
+        return "$path/"
     }
 
     /**
@@ -138,7 +146,7 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * @return Boolean indicating if [path] is a valid route path
      */
     private fun isRoutePathValid(path: String): Boolean {
-        return Regex("(\\w+/)+") matches path
+        return Regex("(\\w+/)*\\w+/?") matches path
     }
 
     /**
@@ -159,17 +167,18 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      */
     private fun assembleAndQueueRoute(method: String, path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?) {
         if (isRoutePathValid(path)) {
+            val formattedPath = formatPath(path)
             if(controller == null && routeController == null) {
-                throw InvalidRouteException("Null controller for route '$method $path' is not allowed.")
+                throw InvalidRouteException("Null controller for route '$method $formattedPath' is not allowed.")
 
             } else {
                 if (controller != null) {
                     routeController = controller
                 }
                 if (basePath == null) {
-                    this.enqueueRoute(method, Route(path, routeController, action))
+                    this.enqueueRoute(method, Route(formattedPath, routeController, action))
                 } else {
-                    this.enqueueRoute(method, Route(prependBasePath(path), routeController, action))
+                    this.enqueueRoute(method, Route(prependBasePath(formattedPath), routeController, action))
                 }
             }
         } else {
