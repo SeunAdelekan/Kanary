@@ -13,7 +13,9 @@ Overview
 2. Improve/fix the code.
 3. Add your changes to CHANGES.rst
 4. Add your name to AUTHORS.rst
-5. Push to your fork and submit a pull request to the ``development`` branch.
+5. Push to your fork 
+6. Write a test for your work
+7. Submit a pull request to the ``staging`` branch.
 
 
 Guidelines
@@ -28,4 +30,4 @@ Some simple guidelines to follow when contributing code:
 Branching
 ---------
 
-There are three main development branches: ``master``, ``master`` and ``develop``. ``master`` represents the currently released version. ``staging`` contains the code under scrutinization for deployment to ``master``. ``develop`` is the latest development work. When submitting a pull request, be sure to submit to ``develop``.
+There are two main development branches: ``master``, and ``staging``. ``master`` represents the currently released version. ``staging`` contains the code under scrutinization for deployment to ``master``.
