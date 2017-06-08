@@ -27,4 +27,7 @@ interface RouterInterface {
     fun patch(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
               controller: KanaryController?=null): KanaryRouter
 
+    fun options(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+              controller: KanaryController?=null): KanaryRouter
+
 }

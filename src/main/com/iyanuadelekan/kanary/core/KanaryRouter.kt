@@ -24,6 +24,7 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
     val putRouteList: RouteList = RouteList()
     val patchRouteList: RouteList = RouteList()
     val deleteRouteList: RouteList = RouteList()
+    val optionsRouteList: RouteList = RouteList()
 
     /**
      * Router function handling GET requests
@@ -86,6 +87,18 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
     }
 
     /**
+     * Router function handling PATCH requests
+     * @param path Specified route path
+     * @param action Action to handle requests targeting specified route path
+     * @param controller Controller handling the route
+     * @return current instance of [KanaryRouter]
+     */
+    override fun options(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?): KanaryRouter {
+        assembleAndQueueRoute(HttpConstants.OPTIONS.name, path, action, controller)
+        return this
+    }
+
+    /**
      * Function used for route queuing
      * adds a [route] based on its [method] to its appropriate route list
      * @param method HTTP method handled by route
@@ -98,6 +111,7 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
             HttpConstants.PUT.name -> putRouteList.add(route)
             HttpConstants.DELETE.name -> deleteRouteList.add(route)
             HttpConstants.PATCH.name -> patchRouteList.add(route)
+            HttpConstants.OPTIONS.name -> optionsRouteList.add(route)
             else -> {
                 println("Unrecognized HTTP method: '$method'")
             }
