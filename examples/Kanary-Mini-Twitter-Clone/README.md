@@ -9,7 +9,7 @@ Deploy using Heroku:
 
 * Download and cd into the directory.
 ```sh
-$ cd Kanary-Mini-Twitter-Clone
+$ cd examples/Kanary-Mini-Twitter-Clone/
 ```
 
 * Create a new git project and add all the files to it

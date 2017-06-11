@@ -1,341 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56aa6acc-fe78-4c9d-bdc4-fc686e2a2261" name="Default" comment="added examples">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/classes/main/META-INF/Hello_World_main.kotlin_module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/classes/main/hello/world/AppKt$main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/classes/main/hello/world/AppKt$requestLogger$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/classes/main/hello/world/AppKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/classes/main/hello/world/HelloWorldController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/META-INF/Kanary-Mini-Twitter-Clone_main.kotlin_module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$main$9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt$requestLogger$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AppKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/AuthController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/Cweet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/CweetSessionMaker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/DataHandler$toCweet$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/DataHandler$toTimelineCweet$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/DataHandler$toUser$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/DataHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/TimelineController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/TimelineCweet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-classes/main/curious/cwitter/UtilKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/lookups.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/last-build.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/sync/kotlin-files-in-java-timestamps.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/META-INF/Cweet_main.kotlin_module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/META-INF/Kanary-Mini-Twitter-Clone_main.kotlin_module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$main$9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt$requestLogger$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AppKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/AuthController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/Cweet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/CweetSessionMaker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/DataHandler$toCweet$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/DataHandler$toTimelineCweet$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/DataHandler$toUser$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/DataHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/TimelineController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/TimelineCweet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/classes/main/curious/cwitter/UtilKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/META-INF/Kanary-Mini-Twitter-Clone_main.kotlin_module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$main$9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt$requestLogger$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AppKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/AuthController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/Cweet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/CweetSessionMaker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/DataHandler$toCweet$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/DataHandler$toTimelineCweet$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/DataHandler$toUser$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/DataHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/TimelineController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/TimelineCweet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-classes/main/curious/cwitter/UtilKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/class-fq-name-to-source.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/internal-name-to-source.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/package-parts.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/proto.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/source-to-classes.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/sources-to-classfiles.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/subtypes.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/increCache.Kanary-Mini-Twitter-Clone_main/kotlin/supertypes.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/lookups.tab_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/last-build.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/sync/kotlin-files-in-java-timestamps.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/cweet.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__com_iyanuadelekan_kanary_0_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_eclipse_jetty_jetty_http_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_eclipse_jetty_jetty_io_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_eclipse_jetty_jetty_server_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_eclipse_jetty_jetty_util_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre8_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/modules/Hello_World.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/modules/Hello_World_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/modules/Hello_World_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin-build/caches/version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/caches/lookups/counters.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/data-container-format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/experimental-format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/build/kotlin/compileKotlin/gradle-format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/settings.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/src/hello/world/app.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__com_github_seratch_kotliquery_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__com_h2database_h2_1_4_193.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__com_iyanuadelekan_kanary_0_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__joda_time_joda_time_2_9_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_eclipse_jetty_jetty_http_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_eclipse_jetty_jetty_io_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_eclipse_jetty_jetty_server_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_eclipse_jetty_jetty_util_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre8_1_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_24.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/libraries/Gradle__org_xerial_sqlite_jdbc_3_8_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/modules/Kanary-Mini-Twitter-Clone.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/modules/Kanary-Mini-Twitter-Clone_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/modules/Kanary-Mini-Twitter-Clone_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/Kanary-Mini-Twitter-Clone.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/Kanary-Mini-Twitter-Clone.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin-build/caches/version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/caches/lookups/counters.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/data-container-format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/experimental-format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/build/kotlin/compileKotlin/gradle-format-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/settings.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/src/curious/cwitter/app.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/src/curious/cwitter/auth.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/src/curious/cwitter/db.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/src/curious/cwitter/timeline.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/src/curious/cwitter/util.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/Kanary.iml" afterPath="$PROJECT_DIR$/.idea/modules/Kanary.iml" />
+    <list default="true" id="56aa6acc-fe78-4c9d-bdc4-fc686e2a2261" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/HelloWorld - Gradle/README.md" afterPath="$PROJECT_DIR$/examples/HelloWorld - Gradle/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/README.md" afterPath="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -394,7 +63,7 @@
       <file leaf-file-name="KanaryRouter.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/KanaryRouter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1515">
+            <state relative-caret-position="0">
               <caret line="109" column="63" lean-forward="false" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
               <folding />
             </state>
@@ -411,15 +80,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/README.md">
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="280">
-                <caret line="41" column="88" lean-forward="false" selection-start-line="41" selection-start-column="88" selection-end-line="41" selection-end-column="88" />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/HelloWorld - Gradle/README.md">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="154">
+                <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -465,6 +150,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="staging" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -724,6 +417,7 @@
         <option value="$PROJECT_DIR$/src/main/App.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/examples/Kanary-Mini-Twitter-Clone/README.md" />
+        <option value="$PROJECT_DIR$/examples/HelloWorld - Gradle/README.md" />
       </list>
     </option>
   </component>
@@ -740,8 +434,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -771,6 +466,12 @@
               <item name="Kanary" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kanary" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kanary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kanary" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="HelloWorld - Gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Kanary" type="b2602c69:ProjectViewProjectNode" />
@@ -1336,6 +1037,14 @@
       <workItem from="1496171650400" duration="9721000" />
       <workItem from="1496950639481" duration="1038000" />
     </task>
+    <task id="LOCAL-00001" summary="added two examples">
+      <created>1497197002324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497197002325</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1359,11 +1068,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30273974" sideWeight="0.5121163" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28198075" sideWeight="0.51534736" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28198075" sideWeight="0.4878837" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28198075" sideWeight="0.48465267" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32471728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1394,6 +1103,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added two examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="added two examples" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -1405,13 +1118,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/server/Server.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle" />
     <entry file="file://$PROJECT_DIR$/src/io/kanary/core/constants/ResponseCodes.kt" />
     <entry file="file://$PROJECT_DIR$/LICENSE">
@@ -1542,7 +1248,7 @@
     <entry file="file://$PROJECT_DIR$/App.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/com/iyanuadelekan/kanary/core/KanaryRouter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
+        <state relative-caret-position="0">
           <caret line="109" column="63" lean-forward="false" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
           <folding />
         </state>
@@ -1585,8 +1291,22 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="280">
-            <caret line="41" column="88" lean-forward="false" selection-start-line="41" selection-start-column="88" selection-end-line="41" selection-end-column="88" />
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/HelloWorld - Gradle/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="154">
+            <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             <folding />
           </first_editor>
           <second_editor />
