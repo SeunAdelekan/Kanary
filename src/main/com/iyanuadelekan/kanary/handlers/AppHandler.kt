@@ -35,27 +35,19 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
 
         if (request != null) {
             if(isMethodSupported(request.method)) {
-                if(request.method == HttpConstants.OPTIONS.name) {
-                    response?.addHeader("Allow", "${HttpConstants.OPTIONS.name}, ${HttpConstants.GET.name}, " +
-                            "${HttpConstants.POST.name}, ${HttpConstants.PUT.name}, ${HttpConstants.DELETE.name}, " +
-                            HttpConstants.PATCH.name)
+                val route: Route? = resolveTargetRoute(request.method, "$target")
 
-                    response?. withStatus(200)?. send("")
-                } else {
-                    val route: Route? = resolveTargetRoute(request.method, "$target")
+                if (route != null) {
+                    val action = route.action
+                    executeBeforeAction(route, request, response)
 
-                    if (route != null) {
-                        val action = route.action
-                        executeBeforeAction(route, request, response)
-
-                        if(baseRequest != null && response != null) {
-                            action.invoke(baseRequest, request, response)
-                        }
-
-                        executeAfterAction(route, request, response)
-                    } else {
-                        response?. withStatus(404)?. send("Method not found.")
+                    if(baseRequest != null && response != null) {
+                        action.invoke(baseRequest, request, response)
                     }
+
+                    executeAfterAction(route, request, response)
+                } else {
+                    response?. withStatus(404)?. send("Method not found.")
                 }
             } else {
                 response?.addHeader("Allow", "${HttpConstants.OPTIONS.name}, ${HttpConstants.GET.name}, " +
@@ -115,6 +107,12 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
                 }
                 HttpConstants.PATCH.name -> {
                     matchedRoutes = router.patchRouteList.filter { it.path == formattedTarget }
+                    if(matchedRoutes.isNotEmpty()) {
+                        route = matchedRoutes[0]
+                    }
+                }
+                HttpConstants.OPTIONS.name -> {
+                    matchedRoutes = router.optionsRouteList.filter { it.path == formattedTarget }
                     if(matchedRoutes.isNotEmpty()) {
                         route = matchedRoutes[0]
                     }

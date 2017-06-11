@@ -45,7 +45,7 @@ Add Kanary as a project dependency
   <dependency>
     <groupId>com.iyanuadelekan</groupId>
     <artifactId>kanary</artifactId>
-    <version>0.9.0</version>
+    <version>0.9.1</version>
   </dependency>
   ...
 </dependencies>
@@ -58,13 +58,13 @@ repositories {
 }
 
 dependencies {
-    compile 'com.iyanuadelekan:kanary:0.9.0'
+    compile 'com.iyanuadelekan:kanary:0.9.1'
 }
 ```
 
 ### Ivy
 ```xml
-<dependency org='com.iyanuadelekan' name='kanary' rev='0.9.0'>
+<dependency org='com.iyanuadelekan' name='kanary' rev='0.9.1'>
   <artifact name='kanary'></artifact>
 </dependency>
 ```
@@ -236,7 +236,7 @@ class UserController : KanaryController() {
 | KanaryController | com.iyanuadelekan.kanary.core |
 | KanaryRouter | com.iyanuadelekan.kanary.core |
 | AppHandler | com.iyanuadelekan.kanary.handlers |
-| server | com.iyanuadelekan.kanary.server |
+| Server | com.iyanuadelekan.kanary.server |
 
 ## Dependencies
 * [Jetty](http://eclipse.org/jetty) (as an application server engine)
