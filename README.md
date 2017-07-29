@@ -45,7 +45,7 @@ Add Kanary as a project dependency
   <dependency>
     <groupId>com.iyanuadelekan</groupId>
     <artifactId>kanary</artifactId>
-    <version>0.9.1</version>
+    <version>0.9.2</version>
   </dependency>
   ...
 </dependencies>
@@ -58,13 +58,13 @@ repositories {
 }
 
 dependencies {
-    compile 'com.iyanuadelekan:kanary:0.9.1'
+    compile 'com.iyanuadelekan:kanary:0.9.2'
 }
 ```
 
 ### Ivy
 ```xml
-<dependency org='com.iyanuadelekan' name='kanary' rev='0.9.1'>
+<dependency org='com.iyanuadelekan' name='kanary' rev='0.9.2'>
   <artifact name='kanary'></artifact>
 </dependency>
 ```
