@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Kanary-Mini-Twitter-Clone:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="2" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../build/kotlin-classes/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iyanuadelekan/kanary/0.9.1/82d1dfc9de004b6b1adc920da245fb50d1d0bbed/kanary-0.9.1.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/com.github.seratch/kotliquery/1.1.2/33f23cc212a1635f5cfcbd20eb630485b8b64c10/kotliquery-1.1.2.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.193/369b51e2090c4e6714d9d5e42010b6330c2cea26/h2-1.4.193.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.xerial/sqlite-jdbc/3.8.9.1/4f970529118d32b31b59431939c026f19c544bf/sqlite-jdbc-3.8.9.1.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre8/1.1.2-4/40378584918fd0a7f58f423ac9b8cb0ee5ad6ddd/kotlin-stdlib-jre8-1.1.2-4.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.5.v20170502/b4d30340213c3d2a5f908860ba170c5a697829be/jetty-server-9.4.5.v20170502.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.1.2-4/d003c37a5be39d8e5b0c6894378f75a7bd8482a1/kotlin-reflect-1.1.2-4.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.8.1/fb1930cd0b1b36924717229f56ca80d785401ff8/jackson-databind-2.8.8.1.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.24/3f6b4bd4f8dbe8d4bea06d107a3826469b85c3e9/slf4j-api-1.7.24.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.1.0/b516787bb3efb327ad7693c65fac0d5fa4a70216/kotlin-test-junit-1.1.0.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.7/6eb2e87ddb09e944bb88f06f19ba0638d4607ffd/joda-time-2.9.7.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre7/1.1.2-4/e6a7403299b8f3126e3a1576c02e3f07ae5af6fa/kotlin-stdlib-jre7-1.1.2-4.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.5.v20170502/c51b8a6a67d64672889249dd958edd77bff8fc0c/jetty-http-9.4.5.v20170502.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.5.v20170502/76086f955d4e943396b8f340fd5bae3ce4da19d9/jetty-io-9.4.5.v20170502.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.8/d478fb6de45a7c3d2cad07c8ad70c7f0a797a020/jackson-core-2.8.8.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.1.0/5fac2076f2399c6ca0da1d14012e9ccf130ac3/kotlin-test-1.1.0.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.5.v20170502/5fd36dfcf39110b809bd9b20cec62706ab694711/jetty-util-9.4.5.v20170502.jar:/Users/orbitechnologies/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.2-4/3f5f1498bdbb9611cb1413f794b3a3a5a6edef34/kotlin-stdlib-1.1.2-4.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="Kanary-Mini-Twitter-Clone_main" />
+          <option name="jvmTarget" value="1.6" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="languageVersion" value="1.1" />
+          <option name="apiVersion" value="1.1" />
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="coroutinesWarn" value="true" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src">
+      <sourceFolder url="file://$MODULE_DIR$/../../src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.iyanuadelekan:kanary:0.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.seratch:kotliquery:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.h2database:h2:1.4.193" level="project" />
+    <orderEntry type="library" name="Gradle: org.xerial:sqlite-jdbc:3.8.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2-4" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-server:9.4.5.v20170502" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.1.2-4" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.24" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.2-4" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:9.4.5.v20170502" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.4.5.v20170502" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.4.5.v20170502" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.1.2-4" level="project" />
+  </component>
+</module>

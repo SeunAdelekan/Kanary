@@ -1,0 +1,44 @@
+apply plugin: 'kotlin'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+buildscript {
+    ext.kotlin_version = '1.1.2-2'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+sourceSets.main.kotlin.srcDirs = ['src']
+mainClassName = 'curious.cwitter.AppKt'
+
+defaultTasks 'run'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+dependencies {
+    compile "com.iyanuadelekan:kanary:0.9.1"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'com.github.seratch:kotliquery:1.1.2'
+    compile 'com.h2database:h2:1.4.193'
+    compile 'org.xerial:sqlite-jdbc:3.8.9.1'
+}
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file('build/classes/main/')
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "2.7"
+}
+
+task stage {
+    dependsOn installDist
+}
