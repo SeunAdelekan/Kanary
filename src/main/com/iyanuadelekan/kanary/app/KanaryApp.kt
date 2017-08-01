@@ -1,8 +1,10 @@
 package com.iyanuadelekan.kanary.app
 
 import com.iyanuadelekan.kanary.core.KanaryRouter
+import org.eclipse.jetty.server.Request
 import org.eclipse.jetty.server.handler.ContextHandler
 import javax.servlet.http.HttpServletRequest
+import javax.servlet.http.HttpServletResponse
 
 /**
  * @author Iyanu Adelekan
@@ -12,7 +14,7 @@ import javax.servlet.http.HttpServletRequest
 class KanaryApp : ContextHandler() {
 
     val routerList: ArrayList<KanaryRouter> = ArrayList()
-    val middlewareList: ArrayList<(HttpServletRequest?) -> Unit> = ArrayList()
+    val middlewareList: ArrayList<(Request?, HttpServletRequest?, HttpServletResponse?) -> Unit> = ArrayList()
 
     /**
      * Adds [middleware] to the app
@@ -29,7 +31,7 @@ class KanaryApp : ContextHandler() {
      * @param middleware Middleware to be added
      * @return current KanaryApp instance
      */
-    fun use(middleware: (request: HttpServletRequest?) -> Unit): KanaryApp {
+    fun use(middleware: (baseRequest: Request?, request: HttpServletRequest?, response: HttpServletResponse?) -> Unit): KanaryApp {
         middlewareList.add(middleware)
         return this
     }
@@ -39,7 +41,7 @@ class KanaryApp : ContextHandler() {
      * @param middleware varying number of middleware
      * @return current KanaryApp instance
      */
-    fun use(vararg middleware: (request: HttpServletRequest?) -> Unit): KanaryApp {
+    fun use(vararg middleware: (baseRequest: Request?, request: HttpServletRequest?, response: HttpServletResponse?) -> Unit): KanaryApp {
         middlewareList += middleware
         return this
     }
