@@ -31,7 +31,7 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
      * @param response Instance used to handle server responses
      */
     override fun handle(target: String?, baseRequest: Request?, request: HttpServletRequest?, response: HttpServletResponse?) {
-        runMiddleware(request)
+        runMiddleware(baseRequest, request, response)
 
         if (request != null) {
             if(isMethodSupported(request.method)) {
@@ -145,11 +145,10 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
     /**
      * This executes all the middleware that have been queued
      * @param request Instance of [HttpServletRequest]
+     * @param response Instance of [HttpServletResponse]
      */
-    private fun runMiddleware(request: HttpServletRequest?) {
-        app.middlewareList.forEach { middleware -> run {
-            Thread(Runnable { middleware.invoke(request) }).start()
-        }}
+    private fun runMiddleware(baseReq: Request?, request: HttpServletRequest?, response: HttpServletResponse?) {
+        app.middlewareList.forEach { it.invoke(baseReq, request, response)}
     }
 
 }
