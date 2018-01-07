@@ -185,7 +185,9 @@ class KanaryRouter(var basePath: String?= null, var routeController: KanaryContr
      * @param action reference to a controller action
      * @param controller controller routed to by router
      */
-    private fun assembleAndQueueRoute(method: String, path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit, controller: KanaryController?) {
+    private fun assembleAndQueueRoute(method: String, path: String,
+                                      action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+                                      controller: KanaryController?) {
         if (isRoutePathValid(path)) {
             val formattedPath = formatPath(path)
             if(controller == null && routeController == null) {

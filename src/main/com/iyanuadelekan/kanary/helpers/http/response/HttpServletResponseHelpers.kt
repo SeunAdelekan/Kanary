@@ -31,6 +31,14 @@ infix fun HttpServletResponse.sendJson(responseNode: JsonNode?) {
     writer.print(ObjectMapper().writeValueAsString(responseNode))
 }
 
+infix fun HttpServletResponse.sendJson(obj: Any) {
+    val mapper = ObjectMapper()
+    val response = mapper.writeValueAsString(obj)
+    contentType = "application/json"
+
+    writer.print(response)
+}
+
 /**
  * Used to end the HTTP response process
  */
