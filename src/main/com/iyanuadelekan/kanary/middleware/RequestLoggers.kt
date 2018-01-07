@@ -1,8 +1,10 @@
 package com.iyanuadelekan.kanary.middleware
 
+import org.eclipse.jetty.server.Request
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.servlet.http.HttpServletRequest
+import javax.servlet.http.HttpServletResponse
 
 /**
  * @author Iyanu Adelekan on 29/05/2017.
@@ -11,14 +13,16 @@ import javax.servlet.http.HttpServletRequest
 /**
  * Logs succinct request details to console
  */
-val simpleConsoleRequestLogger: (HttpServletRequest?) -> Unit = {
-    if(it != null && it.method != null && it.pathInfo != null) {
+val simpleConsoleRequestLogger: (Request?, HttpServletRequest?, HttpServletResponse?) -> Unit = {
+    _, req, _ -> run {
+
+    if(req != null && req.method != null && req.pathInfo != null) {
         val dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
 
-        println("Started ${it.method} '${it.pathInfo}' at ${dateFormat.format(Date())}")
-        if(it.queryString != null) {
-            println("Query string: ${it.queryString}")
+        println("Started ${req.method} '${req.pathInfo}' at ${dateFormat.format(Date())}")
+        if(req.queryString != null) {
+            println("Query string: ${req.queryString}")
         }
 
     }
-}
+} }
