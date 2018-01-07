@@ -261,7 +261,7 @@ Kanary was designed to utilise a respectful approach in aiding engineers and dev
 Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.rst file to get started. Create an issue for bug reports and feature requests.
 
 ## People
-Kanary was created by [Iyanu Adelekan](https://github.com/SeunAdelekan). He is the current project lead.
+Kanary was created by [Iyanu Adelekan](https://github.com/SeunAdelekan).
 
 ## License
 [Apache 2.0](LICENSE)
