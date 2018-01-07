@@ -4,7 +4,7 @@
 [ ![Download](https://api.bintray.com/packages/iyanuadelekan/Kanary/kanary/images/download.svg) ](https://bintray.com/iyanuadelekan/Kanary/kanary/_latestVersion)
 [![Code Climate](https://codeclimate.com/github/SeunAdelekan/Kanary/badges/issue_count.svg)](https://codeclimate.com/github/SeunAdelekan/Kanary)
 
-A minimalist🔬 Kotlin web framework for building🔩⚙ scalable📈 and expressive🎨 RESTful APIs
+A minimalist Kotlin web framework for building expressive REST APIs
 
 ```kotlin
 fun main(args: Array<String>) {
