@@ -258,11 +258,10 @@ Kanary was designed to utilise a respectful approach in aiding engineers and dev
 * Adding support for other popular application servers like Tomcat and Netty
 
 ## Contributing
-Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.rst file to get started.
-Individuals interested in becoming a part of the core development team can connect with me on LinkedIn [here](linkedin.com/in/iyanu-adelekan-13a85a112) and send a message expressing interest.
+Contributions are welcome from all corners of the world! Read the CONTRIBUTIONS.rst file to get started. Create an issue for bug reports and feature requests.
 
 ## People
-Kanary was created by [Iyanu Adelekan](https://github.com/SeunAdelekan). He is the current project lead.
+Kanary was created by [Iyanu Adelekan](https://github.com/SeunAdelekan).
 
 ## License
 [Apache 2.0](LICENSE)
