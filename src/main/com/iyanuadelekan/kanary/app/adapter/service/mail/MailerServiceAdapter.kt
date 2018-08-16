@@ -1,4 +1,4 @@
-package com.iyanuadelekan.kanary.component.adapter.mail
+package com.iyanuadelekan.kanary.app.adapter.service.mail
 
 /**
  * Interface to be extended by email service providers

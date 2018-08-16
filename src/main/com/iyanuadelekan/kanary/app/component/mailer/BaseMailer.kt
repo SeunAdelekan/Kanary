@@ -1,4 +1,4 @@
-package com.iyanuadelekan.kanary.component.mailer
+package com.iyanuadelekan.kanary.app.component.mailer
 
 /**
  * @class [BaseMailer] - Base framework mailer class.
@@ -27,9 +27,7 @@ abstract class BaseMailer {
      *
      * @return [String] - Email body.
      */
-    fun getBody(): String {
-        return body
-    }
+    fun getBody(): String = body
 
     /**
      * Invoked to set the title of the email.
@@ -47,9 +45,7 @@ abstract class BaseMailer {
      *
      * @return [String] - The email title.
      */
-    fun getTitle(): String {
-        return title
-    }
+    fun getTitle(): String = title
 
     /**
      * Sets the sender of the mail.
@@ -67,9 +63,7 @@ abstract class BaseMailer {
      *
      * @return [String] - Sender email address.
      */
-    fun getSender(): String {
-        return sender
-    }
+    fun getSender(): String = sender
 
     /**
      * Sets the subject of the email.
@@ -87,9 +81,7 @@ abstract class BaseMailer {
      *
      * @return [String] - Email subject.
      */
-    fun getSubject(): String {
-        return subject
-    }
+    fun getSubject(): String = subject
 
     /**
      * Sets the receiver of the mail.
@@ -107,9 +99,7 @@ abstract class BaseMailer {
      *
      * @return [String] - Receiver email address.
      */
-    fun getReceiver(): String {
-        return receiver
-    }
+    fun getReceiver(): String = receiver
 
     /**
      * Invoked to send the built email. This method

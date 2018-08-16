@@ -12,22 +12,33 @@ import javax.servlet.http.HttpServletResponse
 
 interface RouterInterface {
 
-    fun get(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+    fun get(
+            path: String,
+            action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+            controller: KanaryController? = null): KanaryRouter
+
+    fun post(
+            path: String,
+            action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
             controller: KanaryController?=null): KanaryRouter
 
-    fun post(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
-             controller: KanaryController?=null): KanaryRouter
+    fun put(
+            path: String,
+            action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+            controller: KanaryController? = null): KanaryRouter
 
-    fun put(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
-            controller: KanaryController?=null): KanaryRouter
+    fun delete(
+            path: String,
+            action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+            controller: KanaryController? = null): KanaryRouter
 
-    fun delete(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
-               controller: KanaryController?=null): KanaryRouter
+    fun patch(
+            path: String,
+            action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+            controller: KanaryController? = null): KanaryRouter
 
-    fun patch(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
-              controller: KanaryController?=null): KanaryRouter
-
-    fun options(path: String, action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
-              controller: KanaryController?=null): KanaryRouter
-
+    fun options(
+            path: String,
+            action: (Request, HttpServletRequest, HttpServletResponse) -> Unit,
+            controller: KanaryController? = null): KanaryRouter
 }

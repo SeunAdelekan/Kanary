@@ -1,4 +1,4 @@
-package com.iyanuadelekan.kanary.component.adapter.db
+package com.iyanuadelekan.kanary.app.adapter.service.db
 
 interface DBServiceAdapter {
 
