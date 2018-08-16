@@ -15,7 +15,7 @@ package com.iyanuadelekan.kanary.app.framework.consumer
  *
  * Some currently available consumers are [MiddlewareConsumer] and [RouterConsumer].
  */
-interface BaseConsumer<T> {
+internal interface BaseConsumer<T> {
 
     /**
      * Adds one or more components to the maintained component list.

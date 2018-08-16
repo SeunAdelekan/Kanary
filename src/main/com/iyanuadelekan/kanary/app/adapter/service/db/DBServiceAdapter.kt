@@ -1,5 +1,11 @@
 package com.iyanuadelekan.kanary.app.adapter.service.db
 
+/**
+ * @author Iyanu Adelekan on 16/08/2018.
+ *
+ * Interface declaring properties and methods that must be implemented by
+ * database services natively compatible with Kanary.
+ */
 interface DBServiceAdapter {
 
     /**

@@ -4,7 +4,7 @@ import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapt
 import com.iyanuadelekan.kanary.app.routerAction
 
 /**
- * @author Iyanu Adelekan on 16/08/2018
+ * @author Iyanu Adelekan on 16/08/2018.
  *
  * Interface defining methods that must be implemented by an application router.
  */
@@ -15,8 +15,9 @@ interface Router {
      *
      * @param [path] - request path.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun get(path: String, routerAction: routerAction)
+    fun get(path: String, routerAction: routerAction): Router
 
     /**
      * Handles GET requests.
@@ -24,16 +25,18 @@ interface Router {
      * @param [path] - request path.
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction)
+    fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router
 
     /**
      * Handles POST requests.
      *
      * @param [path] - request path.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun post(path: String, routerAction: routerAction)
+    fun post(path: String, routerAction: routerAction): Router
 
     /**
      * Handles POST requests.
@@ -41,16 +44,18 @@ interface Router {
      * @param [path] - request path.
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction)
+    fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router
 
     /**
      * Handles PUT requests.
      *
      * @param [path] - request path.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun put(path: String, routerAction: routerAction)
+    fun put(path: String, routerAction: routerAction): Router
 
     /**
      * Handles PUT requests.
@@ -58,16 +63,18 @@ interface Router {
      * @param [path] - request path.
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction)
+    fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router
 
     /**
      * Handles DELETE requests.
      *
      * @param [path] - request path.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun delete(path: String, routerAction: routerAction)
+    fun delete(path: String, routerAction: routerAction): Router
 
     /**
      * Handles DELETE requests.
@@ -75,16 +82,18 @@ interface Router {
      * @param [path] - request path.
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction)
+    fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router
 
     /**
      * Handles OPTIONS requests.
      *
      * @param [path] - request path.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun options(path: String, routerAction: routerAction)
+    fun options(path: String, routerAction: routerAction): Router
 
     /**
      * Handles OPTIONS requests.
@@ -92,6 +101,7 @@ interface Router {
      * @param [path] - request path.
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
      */
-    fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction)
+    fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router
 }
