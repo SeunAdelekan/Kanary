@@ -1,12 +1,14 @@
 package com.iyanuadelekan.kanary.app.adapter.service.db
 
+import com.iyanuadelekan.kanary.app.resource.Resource
+
 /**
  * @author Iyanu Adelekan on 16/08/2018.
  *
  * Interface declaring properties and methods that must be implemented by
  * database services natively compatible with Kanary.
  */
-interface DBServiceAdapter {
+interface DBService : Resource {
 
     /**
      * @property port - Database port. This value will be retrieved

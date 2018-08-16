@@ -1,6 +1,6 @@
 package com.iyanuadelekan.kanary.app.component.mailer
 
-import com.iyanuadelekan.kanary.app.adapter.service.mail.MailerServiceAdapter
+import com.iyanuadelekan.kanary.app.adapter.service.mail.MailerService
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
@@ -108,7 +108,7 @@ abstract class BaseMailer {
 
     /**
      * Invoked to send the built email. This method
-     * utilizes a pre-configured [MailerServiceAdapter] to send
+     * utilizes a pre-configured [MailerService] to send
      * the mail to its specified destination.
      */
     abstract fun send(): Any

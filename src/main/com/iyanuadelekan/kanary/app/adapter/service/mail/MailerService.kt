@@ -1,12 +1,14 @@
 package com.iyanuadelekan.kanary.app.adapter.service.mail
 
+import com.iyanuadelekan.kanary.app.resource.Resource
+
 /**
  * @author Iyanu Adelekan on 16/08/2018.
  *
  * Interface to be extended by email service providers
  * to facilitate the sending of mails in Kanary applications via their service.
  */
-interface MailerServiceAdapter {
+interface MailerService : Resource {
 
     /**
      * @property clientId - Unique identifier of client. Often generated
