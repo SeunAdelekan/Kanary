@@ -1,6 +1,8 @@
 package com.iyanuadelekan.kanary.app.adapter.service.mail
 
 /**
+ * @author Iyanu Adelekan on 16/08/2018.
+ *
  * Interface to be extended by email service providers
  * to facilitate the sending of mails in Kanary applications via their service.
  */

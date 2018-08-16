@@ -7,4 +7,4 @@ import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapt
  *
  * Consumer interface for middleware consumers.
  */
-interface MiddlewareConsumer : BaseConsumer<MiddlewareAdapter>
+internal interface MiddlewareConsumer : BaseConsumer<MiddlewareAdapter>

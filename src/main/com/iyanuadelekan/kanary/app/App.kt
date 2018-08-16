@@ -31,25 +31,20 @@ class App : AppContext() {
      *
      * @return [MiddlewareAdapter] - the `next` middleware.
      */
-    internal fun nextMiddleware(): MiddlewareAdapter {
-        return middlewareHandler.next()
-    }
+    internal fun nextMiddleware(): MiddlewareAdapter = middlewareHandler.next()
 
-    override fun hasNextMiddleware(): Boolean {
-        return middlewareHandler.hasNext()
-    }
+    override fun hasNextMiddleware(): Boolean = middlewareHandler.hasNext()
 
     fun mount(vararg router: Router) {
         routerHandler.use(*router)
     }
 
-    internal fun nextRouter(): Router {
-        return routerHandler.next()
-    }
+    internal fun nextRouter(): Router = routerHandler.next()
 
-    override fun hasNextRouter(): Boolean {
-        return middlewareHandler.hasNext()
-    }
+    /**
+     *
+     */
+    override fun hasNextRouter(): Boolean = middlewareHandler.hasNext()
 
     /**
      * Runs all mounted middleware.

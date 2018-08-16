@@ -1,7 +1,12 @@
 package com.iyanuadelekan.kanary.app.component.mailer
 
+import com.iyanuadelekan.kanary.app.adapter.service.mail.MailerServiceAdapter
+
 /**
- * @class [BaseMailer] - Base framework mailer class.
+ * @author Iyanu Adelekan on 16/08/2018.
+ *
+ * Base framework mailer class. This class should be extended
+ * by mailers
  */
 abstract class BaseMailer {
 

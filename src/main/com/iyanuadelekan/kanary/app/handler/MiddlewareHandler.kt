@@ -5,7 +5,9 @@ import com.iyanuadelekan.kanary.app.framework.consumer.MiddlewareConsumer
 import com.iyanuadelekan.kanary.app.framework.lifecycle.Context
 
 /**
+ * @author Iyanu Adelekan on 16/08/2018.
  *
+ * Delegate class for the handling of application middleware.
  */
 internal class MiddlewareHandler : MiddlewareConsumer {
 
@@ -26,18 +28,14 @@ internal class MiddlewareHandler : MiddlewareConsumer {
      *
      * @return [MiddlewareAdapter] - the next middleware
      */
-    override fun next(): MiddlewareAdapter {
-        return iterator.next()
-    }
+    override fun next(): MiddlewareAdapter = iterator.next()
 
     /**
      * Checks if a `next` middleware exists.
      *
      * @return [Boolean] - true if `next` exists and false otherwise.
      */
-    override fun hasNext(): Boolean {
-        return iterator.hasNext()
-    }
+    override fun hasNext(): Boolean = iterator.hasNext()
 
     /**
      * Runs all mounted middleware.

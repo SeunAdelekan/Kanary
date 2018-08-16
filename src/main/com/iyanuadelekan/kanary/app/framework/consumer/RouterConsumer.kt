@@ -7,4 +7,4 @@ import com.iyanuadelekan.kanary.app.framework.router.Router
  *
  * Consumer interface for router consumers.
  */
-interface RouterConsumer : BaseConsumer<Router>
+internal interface RouterConsumer : BaseConsumer<Router>
