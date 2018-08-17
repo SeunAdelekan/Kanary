@@ -16,6 +16,7 @@ interface Resource {
     enum class Type {
         DATABASE,
         CACHE,
-        MAILER_SERVICE,
+        MAILER,
+        SECURITY
     }
 }

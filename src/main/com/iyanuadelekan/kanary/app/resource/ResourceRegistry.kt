@@ -30,7 +30,11 @@ internal object ResourceRegistry : ResourceRegistry() {
      * @return [Boolean] - true if resource was successfully registered else false.
      */
     override fun register(resource: Resource): Boolean {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        if (!hasRegisteredResource(resource.resourceType)) {
+            registry[resource.resourceType] = resource
+            return true
+        }
+        return false
     }
 
     /**

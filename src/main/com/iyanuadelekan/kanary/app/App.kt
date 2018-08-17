@@ -7,6 +7,9 @@ import com.iyanuadelekan.kanary.app.handler.RouterHandler
 import com.iyanuadelekan.kanary.app.lifecycle.AppContext
 import com.iyanuadelekan.kanary.app.resource.Resource
 import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
+import javax.servlet.http.HttpServletRequest
+import javax.servlet.http.HttpServletResponse
+import com.iyanuadelekan.kanary.app.framework.App as AppFramework
 
 /**
  * @author Iyanu Adelekan on 16/08/2018
@@ -14,7 +17,7 @@ import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
  * Core application handling app logic and maintaining the lifecycle
  * of the server.
  */
-class App : AppContext() {
+class App : AppFramework, AppContext() {
 
     private val routerHandler = RouterHandler()
     private val middlewareHandler = MiddlewareHandler()
@@ -74,4 +77,37 @@ class App : AppContext() {
      * @see Resource.Type for the types of resources returnable.
      */
     override fun getResource(resourceType: Resource.Type): Resource = resourceManager.getResource(resourceType)
+
+    /**
+     * Convenience method that checks if a request is coming from a logged in user.
+     *
+     * @return [Boolean] - true if logged in and false otherwise.
+     */
+    override fun loggedIn(): Boolean = securityManager.loggedIn()
+
+    /**
+     * Convenience method providing access to credentials of the currently logged in user.
+     */
+    override fun getUser() = securityManager.getUser()
+
+    /**
+     * Handles HTTP requests to the server.
+     *
+     * @param request - HTTP request.
+     * @param response - HTTP response.
+     */
+    override fun handleRequest(request: HttpServletRequest, response: HttpServletResponse) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    /**
+     * Registers a resource to the application.
+     *
+     * @param resource - resource to be registered.
+     * @return [App] - current application instance.
+     */
+    override fun registerResource(resource: Resource): App {
+        resourceManager.register(resource)
+        return this
+    }
 }
