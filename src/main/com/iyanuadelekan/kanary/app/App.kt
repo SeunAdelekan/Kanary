@@ -102,6 +102,9 @@ class App : AppFramework, AppContext() {
 
     /**
      * Registers a resource to the application.
+     *
+     * @param resource - resource to be registered.
+     * @return [App] - current application instance.
      */
     override fun registerResource(resource: Resource): App {
         resourceManager.register(resource)
