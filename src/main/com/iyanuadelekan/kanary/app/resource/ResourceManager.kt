@@ -1,16 +1,18 @@
 package com.iyanuadelekan.kanary.app.resource
 
-import com.iyanuadelekan.kanary.app.framework.resource.ResourceManager as FrameworkResourceManager
 import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
 import com.iyanuadelekan.kanary.exceptions.ResourceOverrideException
+import com.iyanuadelekan.kanary.app.framework.resource.ResourceManager as FrameworkResourceManager
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
  *
  * Class in charge of managing application resources. App resources
- * are of varying types.
- * [Resource.Type.DATABASE], [Resource.Type.CACHE] and [Resource.Type.MAILER_SERVICE]
- * are the currently supported application resource types.
+ * are of varying types. The types below are currently supported:
+ * - [Resource.Type.DATABASE]
+ * - [Resource.Type.CACHE]
+ * - [Resource.Type.MAILER]
+ * - [Resource.Type.SECURITY]
  */
 object ResourceManager : FrameworkResourceManager() {
 
