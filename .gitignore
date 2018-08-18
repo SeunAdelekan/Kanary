@@ -4,3 +4,5 @@ settings.xml
 /src/main/com/iyanuadelekan/kanary/App.kt
 target
 .DS_Store
+build
+bin
