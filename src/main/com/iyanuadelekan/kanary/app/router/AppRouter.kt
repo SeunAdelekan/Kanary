@@ -4,7 +4,7 @@ import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapt
 import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
 import com.iyanuadelekan.kanary.app.framework.consumer.MiddlewareConsumer
 import com.iyanuadelekan.kanary.app.framework.router.Router
-import com.iyanuadelekan.kanary.app.routerAction
+import com.iyanuadelekan.kanary.app.RouterAction
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
@@ -40,7 +40,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    override fun get(path: String, routerAction: routerAction): Router {
+    override fun get(path: String, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -52,7 +52,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @return [Router] - Current [Router] instance.
      */
-    override fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router {
+    override fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -63,7 +63,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    override fun post(path: String, routerAction: routerAction): Router {
+    override fun post(path: String, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -75,7 +75,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @return [Router] - Current [Router] instance.
      */
-    override fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router {
+    override fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -86,7 +86,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    override fun put(path: String, routerAction: routerAction): Router {
+    override fun put(path: String, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -98,7 +98,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @return [Router] - Current [Router] instance.
      */
-    override fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router {
+    override fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -109,7 +109,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    override fun delete(path: String, routerAction: routerAction): Router {
+    override fun delete(path: String, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -121,7 +121,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @return [Router] - Current [Router] instance.
      */
-    override fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router {
+    override fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -132,7 +132,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    override fun options(path: String, routerAction: routerAction): Router {
+    override fun options(path: String, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -144,7 +144,7 @@ class AppRouter : Router, MiddlewareConsumer {
      * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
      * @return [Router] - Current [Router] instance.
      */
-    override fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: routerAction): Router {
+    override fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
