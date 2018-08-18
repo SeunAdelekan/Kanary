@@ -7,8 +7,6 @@ import com.iyanuadelekan.kanary.app.handler.RouterHandler
 import com.iyanuadelekan.kanary.app.lifecycle.AppContext
 import com.iyanuadelekan.kanary.app.resource.Resource
 import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
-import javax.servlet.http.HttpServletRequest
-import javax.servlet.http.HttpServletResponse
 import com.iyanuadelekan.kanary.app.framework.App as AppFramework
 
 /**
@@ -89,16 +87,6 @@ class App : AppFramework, AppContext() {
      * Convenience method providing access to credentials of the currently logged in user.
      */
     override fun getUser() = securityManager.getUser()
-
-    /**
-     * Handles HTTP requests to the server.
-     *
-     * @param request - HTTP request.
-     * @param response - HTTP response.
-     */
-    override fun handleRequest(request: HttpServletRequest, response: HttpServletResponse) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     /**
      * Registers a resource to the application.

@@ -5,3 +5,4 @@ settings.xml
 target
 .DS_Store
 build
+bin
