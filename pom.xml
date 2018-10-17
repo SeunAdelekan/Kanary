@@ -8,7 +8,7 @@
     <version>0.9.2</version>
     <properties>
         <kotlin.version>1.2.60</kotlin.version>
-        <jackson.version>2.8.8.1</jackson.version>
+        <jackson.version>2.8.11.1</jackson.version>
         <dokka.version>0.9.14</dokka.version>
         <serialization.version>0.4</serialization.version>
     </properties>
@@ -42,6 +42,7 @@
     </pluginRepositories>
     <build>
         <sourceDirectory>src/main</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
@@ -51,12 +52,16 @@
                     <execution>
                         <id>compile</id>
                         <phase>compile</phase>
-                        <goals> <goal>compile</goal> </goals>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
                     </execution>
                     <execution>
                         <id>test-compile</id>
                         <phase>test-compile</phase>
-                        <goals> <goal>test-compile</goal> </goals>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
