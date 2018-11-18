@@ -1,12 +1,11 @@
 package com.iyanuadelekan.kanary.app.router
 
-import com.iyanuadelekan.kanary.app.RouteList
+import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
-import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
 import com.iyanuadelekan.kanary.app.framework.consumer.MiddlewareConsumer
 import com.iyanuadelekan.kanary.app.framework.router.Router
-import com.iyanuadelekan.kanary.app.RouterAction
-import com.iyanuadelekan.kanary.exceptions.InvalidRouteException
+import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
+import com.iyanuadelekan.kanary.app.framework.router.RouteManager as FrameworkRouteManager
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
@@ -186,150 +185,5 @@ class AppRouter : Router, MiddlewareConsumer {
      */
     override fun hasNext(): Boolean {
         return middlewareHandler.hasNext()
-    }
-
-    /**
-     * Enum defining types of creatable routes.
-     */
-    private enum class RouteType {
-        POST,
-        GET,
-        DELETE,
-        OPTIONS,
-        PUT,
-    }
-
-    /**
-     * Class managing the creation and addition of routes to respective route trees.
-     */
-    private class RouteManager {
-
-        private val getRoutes: ArrayList<RouteNode> = ArrayList()
-        private val postRoutes: ArrayList<RouteNode> = ArrayList()
-        private val putRoutes: ArrayList<RouteNode> = ArrayList()
-        private val deleteRoutes: ArrayList<RouteNode> = ArrayList()
-        private val optionsRoutes: ArrayList<RouteNode> = ArrayList()
-
-        /**
-         * Invoked to register a new route to the router.
-         *
-         * @param routeType - type of route to be added. See [RouteType].
-         * @param path - URL path.
-         * @param action - router action.
-         *
-         * @return [RouteManager] - current [RouteManager] instance.
-         */
-        @Throws(InvalidRouteException::class)
-        fun addRoute(
-                routeType: RouteType,
-                path: String,
-                action: RouterAction,
-                middleware: List<MiddlewareAdapter>? = null): RouteManager {
-
-            val routeList: RouteList = when (routeType) {
-                RouteType.GET -> this.getRoutes
-                RouteType.POST -> this.postRoutes
-                RouteType.PUT -> putRoutes
-                RouteType.DELETE -> deleteRoutes
-                RouteType.OPTIONS -> optionsRoutes
-            }
-            val subPaths: List<String> = path.split("/")
-
-            if (!subPaths.isEmpty()) {
-                var node: RouteNode? = getMatchingNode(routeList, subPaths[0])
-
-                if (node == null) {
-                    node = RouteNode(subPaths[0], action)
-                    routeList.add(node)
-                }
-
-                if (subPaths.size > 1) {
-                    for (i in 1 until subPaths.size) {
-                        val pathSegment = subPaths[i]
-
-                        if (!node!!.hasChild(pathSegment)) {
-                            val childNode = RouteNode(pathSegment)
-
-                            if (i == subPaths.size - 1) {
-                                childNode.action = action
-                            }
-                            if (middleware != null) {
-                                childNode.addMiddleware(middleware)
-                            }
-
-                            node.addChild(childNode)
-                        } else {
-                            if (i == subPaths.size - 1) {
-                                throw InvalidRouteException(
-                                        "The path '$path' with method '${routeType.name}' has already been defined.")
-                            }
-                            node = node.getChild(pathSegment)
-                        }
-                    }
-                }
-                return this
-            }
-            throw InvalidRouteException("The path '$path' is an invalid route path")
-        }
-
-        /**
-         * Invoked to get a matching route node for a given sub path.
-         *
-         * @param routeList - list of routes.
-         * @param path - sub path to match.
-         * @return [RouteNode] - returns a [RouteNode] is one exists and null otherwise.
-         */
-        private fun getMatchingNode(routeList: RouteList, path: String): RouteNode? {
-            var node: RouteNode? = null
-
-            routeList.forEach {
-                if (it.path == path) {
-                    node = it
-                }
-            }
-            return node
-        }
-    }
-
-    private class RouteNode(val path: String, var action: RouterAction? = null) {
-
-        private lateinit var middleware: ArrayList<MiddlewareAdapter>
-        private val children: RouteList = ArrayList()
-
-        fun addChild(routeNode: RouteNode) = this.children.add(routeNode)
-
-        /**
-         * Invoked to check if a route node has a specified child node.
-         *
-         * @param path - path to be matched.
-         * @return [Boolean] - true if child exists and false otherwise.
-         */
-        fun hasChild(path: String): Boolean {
-            children.forEach {
-                if (it.path == path) {
-                    return true
-                }
-            }
-            return false
-        }
-
-        /**
-         * Gets a child node matching a specific path.
-         *
-         * @params path - path to be matched.
-         * @return [RouteNode] - node if one exists and null otherwise.
-         */
-        fun getChild(path: String): RouteNode? {
-            children.forEach {
-                if (it.path == path) {
-                    return it
-                }
-            }
-            return null
-        }
-
-        fun addMiddleware(middleware: List<MiddlewareAdapter>) {
-            this.middleware.addAll(middleware)
-        }
     }
 }
