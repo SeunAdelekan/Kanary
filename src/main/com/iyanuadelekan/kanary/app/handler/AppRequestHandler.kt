@@ -31,7 +31,8 @@ internal class AppRequestHandler : AbstractHandler() {
             path: String,
             immutableRequest: Request,
             request: HttpServletRequest,
-            response: HttpServletResponse) {
+            response: HttpServletResponse
+    ) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }
