@@ -1,10 +1,12 @@
 package com.iyanuadelekan.kanary.app.router
 
+import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
-import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
+import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.app.framework.consumer.MiddlewareConsumer
 import com.iyanuadelekan.kanary.app.framework.router.Router
-import com.iyanuadelekan.kanary.app.RouterAction
+import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
+import com.iyanuadelekan.kanary.app.framework.router.RouteManager as FrameworkRouteManager
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
@@ -32,6 +34,7 @@ import com.iyanuadelekan.kanary.app.RouterAction
 class AppRouter : Router, MiddlewareConsumer {
 
     private val middlewareHandler = MiddlewareHandler()
+    private val routeManager: RouteManager = RouteManager()
 
     /**
      * Handles GET requests.
@@ -41,7 +44,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun get(path: String, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.GET, path, routerAction)
+        return this
     }
 
     /**
@@ -53,7 +57,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.GET, path, routerAction, middleware.toList())
+        return this
     }
 
     /**
@@ -64,7 +69,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun post(path: String, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.POST, path, routerAction)
+        return this
     }
 
     /**
@@ -76,7 +82,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.POST, path, routerAction, middleware.toList())
+        return this
     }
 
     /**
@@ -87,7 +94,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun put(path: String, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.PUT, path, routerAction)
+        return this
     }
 
     /**
@@ -99,7 +107,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.PUT, path, routerAction, middleware.toList())
+        return this
     }
 
     /**
@@ -110,7 +119,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun delete(path: String, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.DELETE, path, routerAction)
+        return this
     }
 
     /**
@@ -122,7 +132,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.DELETE, path, routerAction, middleware.toList())
+        return this
     }
 
     /**
@@ -133,7 +144,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun options(path: String, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.OPTIONS, path, routerAction)
+        return this
     }
 
     /**
@@ -145,7 +157,8 @@ class AppRouter : Router, MiddlewareConsumer {
      * @return [Router] - Current [Router] instance.
      */
     override fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        routeManager.addRoute(RouteType.OPTIONS, path, routerAction, middleware.toList())
+        return this
     }
 
     /**

@@ -2,8 +2,6 @@ package com.iyanuadelekan.kanary.server
 
 import com.iyanuadelekan.kanary.core.KanaryEnvironment
 import org.eclipse.jetty.server.Server
-import org.eclipse.jetty.server.ServerConnector
-import org.eclipse.jetty.util.component.LifeCycle
 
 /**
  * @author Iyanu Adelekan on 23/05/2017.

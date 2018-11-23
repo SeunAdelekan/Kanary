@@ -17,5 +17,4 @@ class RequestUtils {
         }
         return target
     }
-
 }
