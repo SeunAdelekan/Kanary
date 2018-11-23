@@ -2,6 +2,7 @@ package com.iyanuadelekan.kanary.app.router
 
 import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
+import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.app.framework.consumer.MiddlewareConsumer
 import com.iyanuadelekan.kanary.app.framework.router.Router
 import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler

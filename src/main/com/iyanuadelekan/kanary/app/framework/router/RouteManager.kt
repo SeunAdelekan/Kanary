@@ -4,7 +4,6 @@ import com.iyanuadelekan.kanary.app.RouteList
 import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
 import com.iyanuadelekan.kanary.app.router.RouteNode
-import com.iyanuadelekan.kanary.app.router.RouteType
 
 /**
  * @author Iyanu Adelekan on 18/11/2018.
