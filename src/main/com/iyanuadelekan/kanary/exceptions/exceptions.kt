@@ -8,4 +8,4 @@ class ResourceNotFoundException(resourceType: Resource.Type) :
 class ResourceOverrideException(resourceType: Resource.Type) :
         Exception("A resource of type $resourceType has already been registered.")
 
-class InvalidRouteException(override val message: String) : Exception()
+class InvalidRouteException(override val message: String) : Exception(message)

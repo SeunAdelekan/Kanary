@@ -8,3 +8,14 @@ package com.iyanuadelekan.kanary.app.constant
 enum class Protocol {
     HTTP, // includes HTTPS
 }
+
+/**
+ * Route type definitions.
+ */
+internal enum class RouteType {
+    POST,
+    GET,
+    DELETE,
+    OPTIONS,
+    PUT;
+}

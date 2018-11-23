@@ -43,5 +43,5 @@ internal object ResourceRegistry : ResourceRegistry() {
      * @param [resourceType] - type of resource.
      * @return [Boolean] - true if resource has been registered else false.
      */
-    override fun hasRegisteredResource(resourceType: Resource.Type): Boolean  = registry.contains(resourceType)
+    override fun hasRegisteredResource(resourceType: Resource.Type): Boolean = registry.contains(resourceType)
 }
