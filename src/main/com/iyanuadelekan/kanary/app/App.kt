@@ -2,11 +2,13 @@ package com.iyanuadelekan.kanary.app
 
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
 import com.iyanuadelekan.kanary.app.framework.router.Router
+import com.iyanuadelekan.kanary.app.handler.AppRequestHandler
 import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
 import com.iyanuadelekan.kanary.app.handler.RouterHandler
 import com.iyanuadelekan.kanary.app.lifecycle.AppContext
 import com.iyanuadelekan.kanary.app.resource.Resource
 import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
+import org.eclipse.jetty.server.Server
 import com.iyanuadelekan.kanary.app.framework.App as AppFramework
 
 /**
@@ -19,20 +21,21 @@ class App : AppFramework, AppContext() {
 
     private val routerHandler = RouterHandler()
     private val middlewareHandler = MiddlewareHandler()
+    private val requestHandler = AppRequestHandler(this)
 
     /**
      * Mounts a variable number of middleware to the app.
      *
      * @param middleware - middleware to be mounted.
      */
-    fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
+    override fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
 
     /**
      * Returns the `next` middleware.
      *
      * @return [MiddlewareAdapter] - the `next` middleware.
      */
-    internal fun nextMiddleware(): MiddlewareAdapter = middlewareHandler.next()
+    fun nextMiddleware(): MiddlewareAdapter = middlewareHandler.next()
 
     /**
      * Checks if a `next` middleware exists in the middleware list.
@@ -46,7 +49,7 @@ class App : AppFramework, AppContext() {
      *
      * @param routers - routers to be mounted.
      */
-    fun mount(vararg routers: Router) = routerHandler.use(*routers)
+    override fun mount(vararg routers: Router) = routerHandler.use(*routers)
 
     /**
      * Returns the next router in router list maintained by [routerHandler].
@@ -66,6 +69,20 @@ class App : AppFramework, AppContext() {
      * Runs all mounted middleware.
      */
     private fun runMiddleware() = middlewareHandler.run(this)
+
+    /**
+     * Starts the server on a specified port.
+     *
+     * @param port - port to start the server on.
+     */
+    override fun start(port: Int) {
+        Server(port).apply {
+            handler = requestHandler
+
+            start()
+            join()
+        }
+    }
 
     /**
      * Returns an application resource of a specified type.

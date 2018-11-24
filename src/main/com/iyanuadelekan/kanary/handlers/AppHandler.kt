@@ -30,7 +30,12 @@ class AppHandler(val app: KanaryApp): AbstractHandler() {
      * @param request Immutable HTTP request instance
      * @param response Instance used to handle server responses
      */
-    override fun handle(target: String?, baseRequest: Request?, request: HttpServletRequest?, response: HttpServletResponse?) {
+    override fun handle(
+            target: String?,
+            baseRequest: Request?,
+            request: HttpServletRequest?,
+            response: HttpServletResponse?
+    ) {
         runMiddleware(baseRequest, request, response)
 
         if (request != null) {
