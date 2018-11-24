@@ -20,11 +20,11 @@ internal enum class RouteType {
     PUT;
 
     companion object {
-        val methodSet = HashSet<String>()
+        val methodSet = HashMap<String, RouteType>()
 
         init {
             RouteType.values().forEach {
-                methodSet.add(it.name)
+                methodSet.put(it.name, it)
             }
         }
     }

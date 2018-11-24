@@ -28,9 +28,15 @@ annotation class Resource(val resourceType: Resource.Type)
  */
 @MustBeDocumented
 @Target(AnnotationTarget.CLASS)
+@Retention(AnnotationRetention.RUNTIME)
 internal annotation class RequestHandler(val description: String, val protocol: Protocol)
 
-@Retention(AnnotationRetention.RUNTIME)
+/**
+ * Annotation specifying that the marked class is a valid API response entity.
+ *
+ * @property description - response entity description.
+ */
 @MustBeDocumented
 @Target(AnnotationTarget.CLASS)
-annotation class ResponseEntity(val description: String = "")
+@Retention(AnnotationRetention.RUNTIME)
+annotation class ResponseEntity(val description: String = "API response entity.")

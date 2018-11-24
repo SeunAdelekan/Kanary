@@ -2,13 +2,16 @@ package com.iyanuadelekan.kanary.app.framework.router
 
 import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
+import com.iyanuadelekan.kanary.app.router.RouteManager
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
  *
  * Interface defining methods that must be implemented by an application router.
  */
-interface Router {
+abstract class Router {
+
+    internal val routeManager = RouteManager()
 
     /**
      * Handles GET requests.
@@ -17,7 +20,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun get(path: String, routerAction: RouterAction): Router
+    abstract fun get(path: String, routerAction: RouterAction): Router
 
     /**
      * Handles GET requests.
@@ -27,7 +30,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+    abstract fun get(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
 
     /**
      * Handles POST requests.
@@ -36,7 +39,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun post(path: String, routerAction: RouterAction): Router
+    abstract fun post(path: String, routerAction: RouterAction): Router
 
     /**
      * Handles POST requests.
@@ -46,7 +49,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+    abstract fun post(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
 
     /**
      * Handles PUT requests.
@@ -55,7 +58,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun put(path: String, routerAction: RouterAction): Router
+    abstract fun put(path: String, routerAction: RouterAction): Router
 
     /**
      * Handles PUT requests.
@@ -65,7 +68,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+    abstract fun put(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
 
     /**
      * Handles DELETE requests.
@@ -74,7 +77,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun delete(path: String, routerAction: RouterAction): Router
+    abstract fun delete(path: String, routerAction: RouterAction): Router
 
     /**
      * Handles DELETE requests.
@@ -84,7 +87,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+    abstract fun delete(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
 
     /**
      * Handles OPTIONS requests.
@@ -93,7 +96,7 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun options(path: String, routerAction: RouterAction): Router
+    abstract fun options(path: String, routerAction: RouterAction): Router
 
     /**
      * Handles OPTIONS requests.
@@ -103,5 +106,5 @@ interface Router {
      * @param [routerAction] - router action.
      * @return [Router] - Current [Router] instance.
      */
-    fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+    abstract fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
 }

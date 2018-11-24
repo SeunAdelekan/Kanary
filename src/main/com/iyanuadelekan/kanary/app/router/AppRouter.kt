@@ -25,16 +25,15 @@ import com.iyanuadelekan.kanary.app.framework.router.RouteManager as FrameworkRo
  *      user.name = "Jon Snow"
  *      user.title = "King in the north."
  *
- *      ctx.response.<User>send(user)
+ *      ctx.response.send(user)
  * }
  *
  * app.mount(router)
  * app.start(8080)
  */
-class AppRouter : Router, MiddlewareConsumer {
+class AppRouter : Router(), MiddlewareConsumer {
 
     private val middlewareHandler = MiddlewareHandler()
-    private val routeManager: RouteManager = RouteManager()
 
     /**
      * Handles GET requests.

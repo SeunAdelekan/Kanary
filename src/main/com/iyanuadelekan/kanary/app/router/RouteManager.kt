@@ -36,13 +36,7 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
             action: RouterAction,
             middleware: List<MiddlewareAdapter>?): RouteManager {
 
-        val routeList: RouteList = when (routeType) {
-            RouteType.GET -> this.getRoutes
-            RouteType.POST -> this.postRoutes
-            RouteType.PUT -> putRoutes
-            RouteType.DELETE -> deleteRoutes
-            RouteType.OPTIONS -> optionsRoutes
-        }
+        val routeList: RouteList = getRouteList(routeType)
         val subPaths: List<String> = path.split("/")
 
         if (!subPaths.isEmpty()) {
@@ -83,20 +77,49 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
     }
 
     /**
-     * Invoked to get a matching route node for a given sub path.
+     * Invoked to resolve a corresponding RouteNode to a given URL target - if any.
+     *
+     * @param path - URL path (target).
+     * @return [RouteNode] - Returns corresponding instance of [RouteNode], if one exists. Else returns null.
+     */
+    override fun getRouteNode(path: String, method: RouteType): RouteNode? {
+        val routeList = getRouteList(method)
+
+        // TODO finish logic.
+        return RouteNode("")
+    }
+
+    /**
+     * Invoked to get a matching route node - within a given route list - for a given sub path.
      *
      * @param routeList - list of routes.
-     * @param path - sub path to match.
+     * @param subPath - sub path to match.
      * @return [RouteNode] - returns a [RouteNode] is one exists and null otherwise.
      */
-    override fun getMatchingNode(routeList: RouteList, path: String): RouteNode? {
+    override fun getMatchingNode(routeList: RouteList, subPath: String): RouteNode? {
         var node: RouteNode? = null
 
         routeList.forEach {
-            if (it.path == path) {
+            if (it.path == subPath) {
                 node = it
             }
         }
         return node
+    }
+
+    /**
+     * Invoked to resolve the required route list for a given route type.
+     *
+     * @param method - Specified [RouteType].
+     * @return [RouteList] - Corresponding route list.
+     */
+    private fun getRouteList(method: RouteType): RouteList {
+        return when (method) {
+            RouteType.GET -> getRoutes
+            RouteType.POST -> postRoutes
+            RouteType.PUT -> putRoutes
+            RouteType.DELETE -> deleteRoutes
+            RouteType.OPTIONS -> optionsRoutes
+        }
     }
 }
