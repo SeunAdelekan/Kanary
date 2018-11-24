@@ -1,8 +1,9 @@
 package com.iyanuadelekan.kanary.app.framework.annotation
 
 import com.iyanuadelekan.kanary.app.constant.Protocol
+import com.iyanuadelekan.kanary.app.framework.resource.ResourceManager
+import com.iyanuadelekan.kanary.app.framework.resource.ResourceRegistry
 import com.iyanuadelekan.kanary.app.resource.Resource
-import com.iyanuadelekan.kanary.app.framework.resource.*
 
 /**
  * @author Iyanu Adelekan on 17/08/2018.
@@ -28,3 +29,8 @@ annotation class Resource(val resourceType: Resource.Type)
 @MustBeDocumented
 @Target(AnnotationTarget.CLASS)
 internal annotation class RequestHandler(val description: String, val protocol: Protocol)
+
+@Retention(AnnotationRetention.RUNTIME)
+@MustBeDocumented
+@Target(AnnotationTarget.CLASS)
+annotation class ResponseEntity(val description: String = "")

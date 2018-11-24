@@ -2,6 +2,7 @@
 Kanary.iml
 settings.xml
 /src/main/com/iyanuadelekan/kanary/App.kt
+/src/main/com/iyanuadelekan/kanary/AppTest.kt
 target
 .DS_Store
 build

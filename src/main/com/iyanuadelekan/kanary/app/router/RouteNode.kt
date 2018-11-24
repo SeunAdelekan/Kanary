@@ -50,11 +50,41 @@ internal class RouteNode(val path: String, var action: RouterAction? = null) {
     }
 
     /**
+     * Returns number of child nodes.
+     *
+     * @return [Int] - number of child nodes.
+     */
+    fun getChildCount(): Int = children.size
+
+    /**
      * Invoked to add a collection of middleware to route node.
      *
      * @param middleware - middleware to be added.
      */
     fun addMiddleware(middleware: List<MiddlewareAdapter>) {
         this.middleware.addAll(middleware)
+    }
+
+    /**
+     * Converts [RouteNode] to its corresponding string representation.
+     *
+     * @return [String] - String representation of route node.
+     */
+    override fun toString(): String {
+        val builder = StringBuilder()
+        builder.append("$path => [")
+
+        if (!children.isEmpty()) {
+            for (i in 0 until children.size) {
+                builder.append(children[i])
+
+                if (i != children.size - 1) {
+                    builder.append(",")
+                }
+            }
+        }
+        builder.append("]")
+
+        return builder.toString()
     }
 }
