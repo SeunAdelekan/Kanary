@@ -9,3 +9,6 @@ class ResourceOverrideException(resourceType: Resource.Type) :
         Exception("A resource of type $resourceType has already been registered.")
 
 class InvalidRouteException(override val message: String) : Exception(message)
+
+class InvalidResponseEntityException : Exception("Invalid ResponseEntity. " +
+        "A ResponseEntity must be marked with the @ResponseEntityAnnotation")

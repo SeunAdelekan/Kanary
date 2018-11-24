@@ -12,6 +12,7 @@
         <dokka.version>0.9.14</dokka.version>
         <serialization.version>0.4</serialization.version>
         <klint.version>0.29.0</klint.version>
+        <junit-jupiter.version>5.3.1</junit-jupiter.version>
     </properties>
     <name>Kanary</name>
     <description>A light weight🏋🏿 Kotlin web framework for building🔩⚙ highly scalable📈 web APIs</description>
@@ -162,6 +163,11 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter.version}</version>
         </dependency>
     </dependencies>
 </project>

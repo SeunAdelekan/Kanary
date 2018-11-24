@@ -18,4 +18,14 @@ internal enum class RouteType {
     DELETE,
     OPTIONS,
     PUT;
+
+    companion object {
+        val methodSet = HashSet<String>()
+
+        init {
+            RouteType.values().forEach {
+                methodSet.add(it.name)
+            }
+        }
+    }
 }

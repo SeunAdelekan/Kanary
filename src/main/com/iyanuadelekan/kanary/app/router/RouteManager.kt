@@ -3,6 +3,7 @@ package com.iyanuadelekan.kanary.app.router
 import com.iyanuadelekan.kanary.app.RouteList
 import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
+import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.exceptions.InvalidRouteException
 
 /**
@@ -13,11 +14,11 @@ import com.iyanuadelekan.kanary.exceptions.InvalidRouteException
  */
 internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.RouteManager {
 
-    private val getRoutes: ArrayList<RouteNode> = ArrayList()
-    private val postRoutes: ArrayList<RouteNode> = ArrayList()
-    private val putRoutes: ArrayList<RouteNode> = ArrayList()
-    private val deleteRoutes: ArrayList<RouteNode> = ArrayList()
-    private val optionsRoutes: ArrayList<RouteNode> = ArrayList()
+    private val getRoutes: RouteList = ArrayList()
+    private val postRoutes: RouteList = ArrayList()
+    private val putRoutes: RouteList = ArrayList()
+    private val deleteRoutes: RouteList = ArrayList()
+    private val optionsRoutes: RouteList = ArrayList()
 
     /**
      * Invoked to register a new route to the router.
