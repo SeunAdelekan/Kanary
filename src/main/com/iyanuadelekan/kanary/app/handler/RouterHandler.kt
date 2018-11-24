@@ -1,7 +1,9 @@
 package com.iyanuadelekan.kanary.app.handler
 
+import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.app.framework.consumer.RouterConsumer
 import com.iyanuadelekan.kanary.app.framework.router.Router
+import com.iyanuadelekan.kanary.app.router.RouteNode
 
 /**
  * @author Iyanu Adelekan on 16/08/2018.
@@ -9,7 +11,7 @@ import com.iyanuadelekan.kanary.app.framework.router.Router
  * Delegate class for the handling of router consumption within
  * the framework.
  */
-class RouterHandler : RouterConsumer {
+internal class RouterHandler : RouterConsumer {
 
     private val routers: ArrayList<Router> = ArrayList()
     private val iterator: Iterator<Router> = routers.iterator()
@@ -36,4 +38,22 @@ class RouterHandler : RouterConsumer {
      * @return [Boolean] - true if `next` router exists and false otherwise.
      */
     override fun hasNext(): Boolean = iterator.hasNext()
+
+    /**
+     * Invoked to resolve a route into its corresponding route node - if any.
+     *
+     * @param path - Target path.
+     * @return [RouteNode] - Returns corresponding [RouteNode] if one exists. null is returned otherwise
+     *
+     */
+    override  fun resolveRoute(path: String, method: RouteType): RouteNode? {
+        routers.forEach {
+            val routeNode = it.routeManager.getRouteNode(path, method)
+
+            if (routeNode != null) {
+                return routeNode
+            }
+        }
+        return null
+    }
 }

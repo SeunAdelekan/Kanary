@@ -1,12 +1,14 @@
 package com.iyanuadelekan.kanary.app
 
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
+import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.app.framework.router.Router
 import com.iyanuadelekan.kanary.app.handler.AppRequestHandler
 import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
 import com.iyanuadelekan.kanary.app.handler.RouterHandler
 import com.iyanuadelekan.kanary.app.lifecycle.AppContext
 import com.iyanuadelekan.kanary.app.resource.Resource
+import com.iyanuadelekan.kanary.app.router.RouteNode
 import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
 import org.eclipse.jetty.server.Server
 import com.iyanuadelekan.kanary.app.framework.App as AppFramework
@@ -68,7 +70,17 @@ class App : AppFramework, AppContext() {
     /**
      * Runs all mounted middleware.
      */
-    private fun runMiddleware() = middlewareHandler.run(this)
+    internal fun runMiddleware() = middlewareHandler.run(this)
+
+    /**
+     * Invoked to resolve a route into its corresponding route node - if any.
+     *
+     * @param path - Target path.
+     * @return [RouteNode] - Returns corresponding [RouteNode] if one exists. null is returned otherwise
+     *
+     */
+    internal fun resolveRoute(path: String, method: RouteType): RouteNode? =
+            this.routerHandler.resolveRoute(path, method)
 
     /**
      * Starts the server on a specified port.
@@ -92,6 +104,24 @@ class App : AppFramework, AppContext() {
      * @see Resource.Type for the types of resources returnable.
      */
     override fun getResource(resourceType: Resource.Type): Resource = resourceManager.getResource(resourceType)
+
+    /**
+     * Invoked to get a [Map] of request URL parameters.
+     *
+     * @return [Map] - map containing URL parameters.
+     */
+    override fun getUrlParams(): Map<String, String> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    /**
+     * Invoked to get a [Map] of request query parameters.
+     *
+     * @return [Map] - map containing URL query parameters.
+     */
+    override fun getQueryParams(): Map<String, String> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     /**
      * Convenience method that checks if a request is coming from a logged in user.

@@ -3,6 +3,7 @@ package com.iyanuadelekan.kanary.app.router
 import com.iyanuadelekan.kanary.app.RouteList
 import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
+import com.iyanuadelekan.kanary.app.lifecycle.AppContext
 
 /**
  * @author Iyanu Adelekan on 18/11/2018.
@@ -63,6 +64,14 @@ internal class RouteNode(val path: String, var action: RouterAction? = null) {
      */
     fun addMiddleware(middleware: List<MiddlewareAdapter>) {
         this.middleware.addAll(middleware)
+    }
+
+    fun runMiddleWare(ctx: AppContext) {
+        middleware.forEach { it.run(ctx) }
+    }
+
+    fun executeAction(ctx: AppContext) {
+        action?.invoke(ctx)
     }
 
     /**

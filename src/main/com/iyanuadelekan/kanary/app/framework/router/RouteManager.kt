@@ -11,11 +11,36 @@ import com.iyanuadelekan.kanary.app.router.RouteNode
  */
 internal interface RouteManager {
 
-    fun addRoute(routeType: RouteType,
-                 path: String,
-                 action: RouterAction,
-                 middleware: List<MiddlewareAdapter>? = null
+    /**
+     * Invoked to register a new route to the router.
+     *
+     * @param routeType - type of route to be added. See [RouteType].
+     * @param path - URL path.
+     * @param action - router action.
+     *
+     * @return [RouteManager] - current [RouteManager] instance.
+     */
+    fun addRoute(
+            routeType: RouteType,
+            path: String,
+            action: RouterAction,
+            middleware: List<MiddlewareAdapter>? = null
     ): RouteManager
 
+    /**
+     * Invoked to resolve a corresponding RouteNode to a given URL target - if any.
+     *
+     * @param path - URL path (target).
+     * @return [RouteNode] - Returns corresponding instance of [RouteNode], if one exists. Else returns null.
+     */
+    fun getRouteNode(path: String, method: RouteType): RouteNode?
+
+    /**
+     * Invoked to get a matching route node - within a given route list - for a given sub path.
+     *
+     * @param routeList - list of routes.
+     * @param path - sub path to match.
+     * @return [RouteNode] - returns a [RouteNode] is one exists and null otherwise.
+     */
     fun getMatchingNode(routeList: RouteList, path: String): RouteNode?
 }

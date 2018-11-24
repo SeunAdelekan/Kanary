@@ -1,5 +1,6 @@
 package com.iyanuadelekan.kanary.app.framework.lifecycle
 
+import org.eclipse.jetty.server.Request
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletResponse
  */
 abstract class Context {
 
+    lateinit var immutableRequest: Request
     lateinit var request: HttpServletRequest
     lateinit var response: HttpServletResponse
 
@@ -24,4 +26,18 @@ abstract class Context {
      * Returns the credentials of the currently logged in user.
      */
     abstract fun getUser()
+
+    /**
+     * Invoked to get a [Map] of request URL parameters.
+     *
+     * @return [Map] - map containing URL parameters.
+     */
+    abstract fun getUrlParams(): Map<String, String>
+
+    /**
+     * Invoked to get a [Map] of request query parameters.
+     *
+     * @return [Map] - map containing URL query parameters.
+     */
+    abstract fun getQueryParams(): Map<String, String>
 }
