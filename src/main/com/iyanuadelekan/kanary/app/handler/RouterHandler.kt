@@ -43,15 +43,14 @@ internal class RouterHandler : RouterConsumer {
      * Invoked to resolve a route into its corresponding route node - if any.
      *
      * @param path - Target path.
-     * @return [RouteNode] - Returns corresponding [RouteNode] if one exists. null is returned otherwise
-     *
+     * @return [Pair] - Returns corresponding Router-RouteNode [Pair] if one exists. null is returned otherwise
      */
-    override  fun resolveRoute(path: String, method: RouteType): RouteNode? {
+    override  fun resolveRoute(path: String, method: RouteType): Pair<Router, RouteNode>? {
         routers.forEach {
             val routeNode = it.routeManager.getRouteNode(path, method)
 
             if (routeNode != null) {
-                return routeNode
+                return Pair(it, routeNode)
             }
         }
         return null

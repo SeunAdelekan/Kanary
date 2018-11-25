@@ -46,22 +46,32 @@ internal class AppRequestHandler(val app: App) : AbstractHandler() {
         }
 
         if (RouteType.methodSet.contains(request.method)) {
-            val routeNode = app.resolveRoute(path, RouteType.methodSet[request.method] as RouteType)
+            val res = app.resolveRoute(path, RouteType.methodSet[request.method] as RouteType)
 
-            if (routeNode != null) {
+            if (res != null) {
+                val (router, routeNode) = res
+
                 /**
                  * An appropriate route node exists for the HTTP request with the given target.
                  * Hence we firstly run the application level middleware to work on the request.
                  */
                 app.runMiddleware()
                 /**
+                 * Execute beforeAction callback.
+                 */
+                router.executeBeforeAction(app)
+                /**
                  * Next, we run the route specific middleware.
                  */
                 routeNode.runMiddleWare(app)
                 /**
-                 * Lastly, execute the corresponding action to the given route.
+                 * Execute the corresponding action to the given route.
                  */
                 routeNode.executeAction(app)
+                /**
+                 * Lastly, execute afterAction callback.
+                 */
+                router.executeAfterAction(app)
 
                 return
             }

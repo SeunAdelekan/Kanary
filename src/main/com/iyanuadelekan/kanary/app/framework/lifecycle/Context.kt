@@ -11,9 +11,15 @@ import javax.servlet.http.HttpServletResponse
  */
 abstract class Context {
 
+    var port: Int = 8080
     lateinit var immutableRequest: Request
     lateinit var request: HttpServletRequest
     lateinit var response: HttpServletResponse
+
+    /**
+     * Returns server port.
+     */
+    fun port(): Int = port
 
     /**
      * Checks if a request is coming from a logged in user.

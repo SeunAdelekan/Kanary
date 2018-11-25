@@ -2,11 +2,13 @@ package com.iyanuadelekan.kanary.app
 
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
 import com.iyanuadelekan.kanary.app.constant.RouteType
+import com.iyanuadelekan.kanary.app.framework.lifecycle.LifeCycle
 import com.iyanuadelekan.kanary.app.framework.router.Router
 import com.iyanuadelekan.kanary.app.handler.AppRequestHandler
 import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
 import com.iyanuadelekan.kanary.app.handler.RouterHandler
 import com.iyanuadelekan.kanary.app.lifecycle.AppContext
+import com.iyanuadelekan.kanary.app.lifecycle.LifeCycleManager
 import com.iyanuadelekan.kanary.app.resource.Resource
 import com.iyanuadelekan.kanary.app.router.RouteNode
 import com.iyanuadelekan.kanary.exceptions.ResourceNotFoundException
@@ -19,11 +21,16 @@ import com.iyanuadelekan.kanary.app.framework.App as AppFramework
  * Core application handling app logic and maintaining the lifecycle
  * of the server.
  */
-class App : AppFramework, AppContext() {
+class App : AppFramework, AppContext(), LifeCycle {
 
+    private lateinit var server: Server
     private val routerHandler = RouterHandler()
     private val middlewareHandler = MiddlewareHandler()
     private val requestHandler = AppRequestHandler(this)
+
+    private val lifeCycleManager by lazy {
+        LifeCycleManager()
+    }
 
     /**
      * Mounts a variable number of middleware to the app.
@@ -79,7 +86,7 @@ class App : AppFramework, AppContext() {
      * @return [RouteNode] - Returns corresponding [RouteNode] if one exists. null is returned otherwise
      *
      */
-    internal fun resolveRoute(path: String, method: RouteType): RouteNode? =
+    internal fun resolveRoute(path: String, method: RouteType): Pair<Router, RouteNode>? =
             this.routerHandler.resolveRoute(path, method)
 
     /**
@@ -88,12 +95,44 @@ class App : AppFramework, AppContext() {
      * @param port - port to start the server on.
      */
     override fun start(port: Int) {
-        Server(port).apply {
+        lifeCycleManager.onStart()
+        this.port = port
+
+        server = Server(port).apply {
             handler = requestHandler
 
             start()
             join()
         }
+    }
+
+    /**
+     * Stops the application server.
+     */
+    override fun stop() {
+        lifeCycleManager.onStop()
+
+        if (!server.isStopped) {
+            server.stop()
+        }
+    }
+
+    /**
+     * Adds application start event.
+     *
+     * @param event
+     */
+    override fun onStart(event: () -> Unit) {
+        lifeCycleManager.addStartEvent(event)
+    }
+
+    /**
+     * Adds application stop event.
+     *
+     * @param event
+     */
+    override fun onStop(event: () -> Unit) {
+        lifeCycleManager.addStopEvent(event)
     }
 
     /**
