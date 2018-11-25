@@ -51,6 +51,13 @@ internal class RouteNode(val path: String, var action: RouterAction? = null) {
     }
 
     /**
+     * Gets children of given node.
+     *
+     * @return [RouteList] - children.
+     */
+    fun getChildren(): RouteList = this.children
+
+    /**
      * Returns number of child nodes.
      *
      * @return [Int] - number of child nodes.

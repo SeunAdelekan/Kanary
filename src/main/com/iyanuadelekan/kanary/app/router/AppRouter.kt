@@ -206,6 +206,106 @@ class AppRouter : Router(), MiddlewareConsumer {
     }
 
     /**
+     * Handles HEAD requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun head(path: String, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.HEAD, path, routerAction)
+        return this
+    }
+
+    /**
+     * Handles HEAD requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun head(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.HEAD, path, routerAction, middleware.toList())
+        return this
+    }
+
+    /**
+     * Handles PATCH requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun patch(path: String, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.PATCH, path, routerAction)
+        return this
+    }
+
+    /**
+     * Handles PATCH requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun patch(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.PATCH, path, routerAction, middleware.toList())
+        return this
+    }
+
+    /**
+     * Handles LINK requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun link(path: String, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.LINK, path, routerAction)
+        return this
+    }
+
+    /**
+     * Handles LINK requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun link(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.LINK, path, routerAction, middleware.toList())
+        return this
+    }
+
+    /**
+     * Handles UNLINK requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun unlink(path: String, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.UNLINK, path, routerAction)
+        return this
+    }
+
+    /**
+     * Handles UNLINK requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @return [Router] - Current [Router] instance.
+     */
+    override fun unlink(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router {
+        routeManager.addRoute(RouteType.UNLINK, path, routerAction, middleware.toList())
+        return this
+    }
+
+    /**
      * Mounts a variable number of middleware to the application.
      *
      * @param middleware - middleware to be mounted.

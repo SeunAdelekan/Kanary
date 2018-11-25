@@ -138,4 +138,80 @@ abstract class Router {
      * @return [Router] - Current [Router] instance.
      */
     abstract fun options(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+
+    /**
+     * Handles HEAD requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun head(path: String, routerAction: RouterAction): Router
+
+    /**
+     * Handles HEAD requests.
+     *
+     * @param [path] - request path.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun head(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+
+    /**
+     * Handles PATCH requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun patch(path: String, routerAction: RouterAction): Router
+
+    /**
+     * Handles PATCH requests.
+     *
+     * @param [path] - request path.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun patch(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+
+    /**
+     * Handles LINK requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun link(path: String, routerAction: RouterAction): Router
+
+    /**
+     * Handles LINK requests.
+     *
+     * @param [path] - request path.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun link(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
+
+    /**
+     * Handles UNLINK requests.
+     *
+     * @param [path] - request path.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun unlink(path: String, routerAction: RouterAction): Router
+
+    /**
+     * Handles UNLINK requests.
+     *
+     * @param [path] - request path.
+     * @param [middleware] - list of [MiddlewareAdapter] instances to be added.
+     * @param [routerAction] - router action.
+     * @return [Router] - Current [Router] instance.
+     */
+    abstract fun unlink(path: String, vararg middleware: MiddlewareAdapter, routerAction: RouterAction): Router
 }

@@ -72,7 +72,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @return [Boolean] - true if `next` router exists and false otherwise.
      */
-    override fun hasNextRouter(): Boolean = middlewareHandler.hasNext()
+    override fun hasNextRouter(): Boolean = routerHandler.hasNext()
 
     /**
      * Runs all mounted middleware.
@@ -122,7 +122,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @param event
      */
-    override fun onStart(event: () -> Unit) {
+    override fun onStart(event: LifeCycleEvent) {
         lifeCycleManager.addStartEvent(event)
     }
 
@@ -131,7 +131,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @param event
      */
-    override fun onStop(event: () -> Unit) {
+    override fun onStop(event: LifeCycleEvent) {
         lifeCycleManager.addStopEvent(event)
     }
 
