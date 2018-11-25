@@ -37,7 +37,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @param middleware - middleware to be mounted.
      */
-    fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
+    override fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
 
     /**
      * Returns the `next` middleware.
