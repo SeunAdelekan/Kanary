@@ -2,6 +2,7 @@ package com.iyanuadelekan.kanary.app.framework.router
 
 import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
+import com.iyanuadelekan.kanary.app.framework.lifecycle.Context
 import com.iyanuadelekan.kanary.app.router.RouteManager
 
 /**
@@ -12,6 +13,36 @@ import com.iyanuadelekan.kanary.app.router.RouteManager
 abstract class Router {
 
     internal val routeManager = RouteManager()
+
+    /**
+     * Invoked to set 'beforeAction' callback. This action
+     * will be executed before individual router actions.
+     *
+     * @param action
+     */
+    abstract fun beforeAction(action: RouterAction)
+
+    /**
+     * Executes beforeAction callback method.
+     *
+     * @param ctx - [Context]
+     */
+    abstract fun executeBeforeAction(ctx: Context)
+
+    /**
+     * Invoked to set 'afterAction' callback. This action
+     * will be executed after individual router actions.
+     *
+     * @param action
+     */
+    abstract fun afterAction(action: RouterAction)
+
+    /**
+     * Executes afterAction callback method.
+     *
+     * @param ctx - [Context]
+     */
+    abstract fun executeAfterAction(ctx: Context)
 
     /**
      * Handles GET requests.

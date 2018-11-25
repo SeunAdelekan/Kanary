@@ -28,7 +28,12 @@ internal interface App {
      *
      * @param port - port to start the server on.
      */
-    fun start(port: Int)
+    fun start(port: Int = 8080)
+
+    /**
+     * Stops the application server.
+     */
+    fun stop()
 
     /**
      * Registers a resource to the application.

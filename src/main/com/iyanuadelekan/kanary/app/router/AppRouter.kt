@@ -4,6 +4,7 @@ import com.iyanuadelekan.kanary.app.RouterAction
 import com.iyanuadelekan.kanary.app.adapter.component.middleware.MiddlewareAdapter
 import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.app.framework.consumer.MiddlewareConsumer
+import com.iyanuadelekan.kanary.app.framework.lifecycle.Context
 import com.iyanuadelekan.kanary.app.framework.router.Router
 import com.iyanuadelekan.kanary.app.handler.MiddlewareHandler
 import com.iyanuadelekan.kanary.app.framework.router.RouteManager as FrameworkRouteManager
@@ -33,7 +34,51 @@ import com.iyanuadelekan.kanary.app.framework.router.RouteManager as FrameworkRo
  */
 class AppRouter : Router(), MiddlewareConsumer {
 
+    lateinit var precedingAction: RouterAction
+    lateinit var succeedingAction: RouterAction
     private val middlewareHandler = MiddlewareHandler()
+
+    /**
+     * Invoked to set 'beforeAction' callback. This action
+     * will be executed before individual router actions.
+     *
+     * @param action
+     */
+    override fun beforeAction(action: RouterAction) {
+        precedingAction = action
+    }
+
+    /**
+     * Executes beforeAction callback method.
+     *
+     * @param ctx - [Context]
+     */
+    override fun executeBeforeAction(ctx: Context) {
+        if (::precedingAction.isInitialized) {
+            precedingAction(ctx)
+        }
+    }
+
+    /**
+     * Invoked to set 'afterAction' callback. This action
+     * will be executed after individual router actions.
+     *
+     * @param action
+     */
+    override fun afterAction(action: RouterAction) {
+        succeedingAction = action
+    }
+
+    /**
+     * Executes afterAction callback method.
+     *
+     * @param ctx - [Context]
+     */
+    override fun executeAfterAction(ctx: Context) {
+        if (::succeedingAction.isInitialized) {
+            succeedingAction(ctx)
+        }
+    }
 
     /**
      * Handles GET requests.

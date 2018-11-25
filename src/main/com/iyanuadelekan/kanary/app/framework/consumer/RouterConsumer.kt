@@ -15,8 +15,8 @@ internal interface RouterConsumer : BaseConsumer<Router> {
      * Invoked to resolve a route into its corresponding route node - if any.
      *
      * @param path - Target path.
-     * @return [RouteNode] - Returns corresponding [RouteNode] if one exists. null is returned otherwise
+     * @return [Pair] - Returns corresponding Router-RouteNode [Pair] if one exists. null is returned otherwise
      *
      */
-    fun resolveRoute(path: String, method: RouteType): RouteNode?
+    fun resolveRoute(path: String, method: RouteType): Pair<Router, RouteNode>?
 }
