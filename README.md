@@ -2,6 +2,7 @@
 ![alt text](images/Kanary.JPG?raw=true "")
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [ ![Download](https://api.bintray.com/packages/iyanuadelekan/Kanary/kanary/images/download.svg) ](https://bintray.com/iyanuadelekan/Kanary/kanary/_latestVersion)
+[![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 [![Code Climate](https://codeclimate.com/github/SeunAdelekan/Kanary/badges/issue_count.svg)](https://codeclimate.com/github/SeunAdelekan/Kanary)
 
 A minimalist Kotlin web framework for building expressive REST APIs
