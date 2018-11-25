@@ -37,7 +37,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @param middleware - middleware to be mounted.
      */
-    override fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
+    fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
 
     /**
      * Returns the `next` middleware.
@@ -51,7 +51,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @return [Boolean] - true if `next` middleware exists and false otherwise.
      */
-    override fun hasNextMiddleware(): Boolean = middlewareHandler.hasNext()
+    fun hasNextMiddleware(): Boolean = middlewareHandler.hasNext()
 
     /**
      * Mounts a variable number of routers to the application.
@@ -72,7 +72,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @return [Boolean] - true if `next` router exists and false otherwise.
      */
-    override fun hasNextRouter(): Boolean = middlewareHandler.hasNext()
+    override fun hasNextRouter(): Boolean = routerHandler.hasNext()
 
     /**
      * Runs all mounted middleware.
@@ -122,7 +122,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @param event
      */
-    override fun onStart(event: () -> Unit) {
+    override fun onStart(event: LifeCycleEvent) {
         lifeCycleManager.addStartEvent(event)
     }
 
@@ -131,7 +131,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @param event
      */
-    override fun onStop(event: () -> Unit) {
+    override fun onStop(event: LifeCycleEvent) {
         lifeCycleManager.addStopEvent(event)
     }
 

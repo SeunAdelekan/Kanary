@@ -17,7 +17,11 @@ internal enum class RouteType {
     GET,
     DELETE,
     OPTIONS,
-    PUT;
+    PUT,
+    HEAD,
+    PATCH,
+    LINK,
+    UNLINK;
 
     companion object {
         val methodSet = HashMap<String, RouteType>()

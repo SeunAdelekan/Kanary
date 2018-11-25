@@ -14,11 +14,15 @@ import com.iyanuadelekan.kanary.exceptions.InvalidRouteException
  */
 internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.RouteManager {
 
-    private val getRoutes: RouteList = ArrayList()
-    private val postRoutes: RouteList = ArrayList()
-    private val putRoutes: RouteList = ArrayList()
-    private val deleteRoutes: RouteList = ArrayList()
-    private val optionsRoutes: RouteList = ArrayList()
+    private val getRoutes by lazy { RouteList() }
+    private val postRoutes by lazy { RouteList() }
+    private val putRoutes by lazy { RouteList() }
+    private val deleteRoutes by lazy { RouteList() }
+    private val optionsRoutes by lazy { RouteList() }
+    private val headRoutes by lazy { RouteList() }
+    private val patchRoutes by lazy { RouteList() }
+    private val linkRoutes by lazy { RouteList() }
+    private val unlinkRoutes by lazy { RouteList() }
 
     /**
      * Invoked to register a new route to the router.
@@ -83,9 +87,22 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
      * @return [RouteNode] - Returns corresponding instance of [RouteNode], if one exists. Else returns null.
      */
     override fun getRouteNode(path: String, method: RouteType): RouteNode? {
-        val routeList = getRouteList(method)
+        var routeList = getRouteList(method)
+        val urlPathSegments = path.split('/')
 
-        // TODO finish logic.
+        for (i in 0 until urlPathSegments.size) {
+            lateinit var node: RouteNode
+
+            for (j in 0 until routeList.size) {
+                if (routeList[i].path == urlPathSegments[i] || routeList[i].path[0] == ':') {
+                    node = routeList[i]
+                    routeList = node.getChildren()
+                    break
+                }
+            }
+
+        }
+
         return RouteNode("")
     }
 
@@ -120,6 +137,10 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
             RouteType.PUT -> putRoutes
             RouteType.DELETE -> deleteRoutes
             RouteType.OPTIONS -> optionsRoutes
+            RouteType.HEAD -> headRoutes
+            RouteType.PATCH -> patchRoutes
+            RouteType.LINK -> linkRoutes
+            RouteType.UNLINK -> unlinkRoutes
         }
     }
 }
