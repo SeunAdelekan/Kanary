@@ -27,6 +27,13 @@ abstract class AppContext : Context() {
     val securityManager: SecurityManager = AppSecurityManager
 
     /**
+     * Checks if a `next` middleware exists.
+     *
+     * @return true if `next` middleware exists and false otherwise.
+     */
+    abstract fun hasNextMiddleware(): Boolean
+
+    /**
      * Checks if a `next` router exists.
      *
      * @return true if `next` router exists and false otherwise.

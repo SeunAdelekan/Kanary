@@ -51,7 +51,7 @@ class App : AppFramework, AppContext(), LifeCycle {
      *
      * @return [Boolean] - true if `next` middleware exists and false otherwise.
      */
-    fun hasNextMiddleware(): Boolean = middlewareHandler.hasNext()
+    override fun hasNextMiddleware(): Boolean = middlewareHandler.hasNext()
 
     /**
      * Mounts a variable number of routers to the application.
