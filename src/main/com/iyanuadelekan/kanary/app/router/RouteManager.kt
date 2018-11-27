@@ -44,7 +44,7 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
         val subPaths: List<String> = path.split("/")
 
         if (!subPaths.isEmpty()) {
-            var node: RouteNode? = getMatchingNode(routeList, subPaths[0])
+            var node = getMatchingNode(routeList, subPaths[0])
 
             if (node == null) {
                 node = RouteNode(subPaths[0], action)
@@ -53,9 +53,10 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
 
             if (subPaths.size > 1) {
                 for (i in 1 until subPaths.size) {
+                    node = node as RouteNode
                     val pathSegment = subPaths[i]
 
-                    if (!node!!.hasChild(pathSegment)) {
+                    if (!node.hasChild(pathSegment)) {
                         val childNode = RouteNode(pathSegment)
 
                         if (i == subPaths.size - 1) {
@@ -87,23 +88,36 @@ internal class RouteManager : com.iyanuadelekan.kanary.app.framework.router.Rout
      * @return [RouteNode] - Returns corresponding instance of [RouteNode], if one exists. Else returns null.
      */
     override fun getRouteNode(path: String, method: RouteType): RouteNode? {
-        var routeList = getRouteList(method)
+        val queue: ArrayList<RouteNode> = ArrayList()
         val urlPathSegments = path.split('/')
+        val iterator = urlPathSegments.iterator()
+        var currentSegment = iterator.next()
 
-        for (i in 0 until urlPathSegments.size) {
-            lateinit var node: RouteNode
-
-            for (j in 0 until routeList.size) {
-                if (routeList[i].path == urlPathSegments[i] || routeList[i].path[0] == ':') {
-                    node = routeList[i]
-                    routeList = node.getChildren()
-                    break
-                }
+        getRouteList(method).forEach {
+            if (it.path == currentSegment || it.path[0] == ':') {
+                queue.add(it)
             }
-
         }
 
-        return RouteNode("")
+        while (!queue.isEmpty()) {
+            val currentNode = queue[0]
+
+            if (currentNode.path == currentSegment || currentNode.path[0] == ':') {
+                if (!iterator.hasNext()) {
+                    return currentNode
+                }
+                currentSegment = iterator.next()
+            }
+
+            currentNode.getChildren().forEach {
+                if (it.path == currentSegment || it.path[0] == ':') {
+                    queue.add(it)
+                }
+            }
+            queue.removeAt(0)
+        }
+
+        return null
     }
 
     /**

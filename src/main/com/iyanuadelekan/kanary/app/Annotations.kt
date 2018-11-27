@@ -1,4 +1,4 @@
-package com.iyanuadelekan.kanary.app.framework.annotation
+package com.iyanuadelekan.kanary.app
 
 import com.iyanuadelekan.kanary.app.constant.Protocol
 import com.iyanuadelekan.kanary.app.framework.resource.ResourceManager

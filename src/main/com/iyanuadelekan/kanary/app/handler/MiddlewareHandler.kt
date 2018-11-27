@@ -11,8 +11,8 @@ import com.iyanuadelekan.kanary.app.framework.lifecycle.Context
  */
 internal class MiddlewareHandler : MiddlewareConsumer {
 
-    val middleware: ArrayList<MiddlewareAdapter> = ArrayList()
-    val iterator: Iterator<MiddlewareAdapter> = middleware.iterator()
+    private val middleware: ArrayList<MiddlewareAdapter> = ArrayList()
+    private val iterator: Iterator<MiddlewareAdapter> = middleware.iterator()
 
     /**
      * Mounts a variable number of middleware.
@@ -42,7 +42,7 @@ internal class MiddlewareHandler : MiddlewareConsumer {
      *
      * @param ctx - server context.
      */
-    internal fun run(ctx: Context) {
+    fun run(ctx: Context) {
         while (iterator.hasNext()) {
             iterator.next().run(ctx)
         }
