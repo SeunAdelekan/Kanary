@@ -1,6 +1,6 @@
 package com.iyanuadelekan.kanary.app.data
 
-import com.iyanuadelekan.kanary.app.framework.annotation.ResponseEntity
+import com.iyanuadelekan.kanary.app.ResponseEntity
 
 /**
  * @author Iyanu Adelekan on 24/11/2018.

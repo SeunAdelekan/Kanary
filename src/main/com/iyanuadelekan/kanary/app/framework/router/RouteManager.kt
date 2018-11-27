@@ -39,8 +39,8 @@ internal interface RouteManager {
      * Invoked to get a matching route node - within a given route list - for a given sub path.
      *
      * @param routeList - list of routes.
-     * @param path - sub path to match.
+     * @param subPath - sub path to match.
      * @return [RouteNode] - returns a [RouteNode] is one exists and null otherwise.
      */
-    fun getMatchingNode(routeList: RouteList, path: String): RouteNode?
+    fun getMatchingNode(routeList: RouteList, subPath: String): RouteNode?
 }

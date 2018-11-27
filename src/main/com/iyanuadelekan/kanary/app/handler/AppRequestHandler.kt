@@ -4,7 +4,7 @@ import com.iyanuadelekan.kanary.app.App
 import com.iyanuadelekan.kanary.app.constant.Protocol
 import com.iyanuadelekan.kanary.app.constant.RouteType
 import com.iyanuadelekan.kanary.app.data.GenericResponse
-import com.iyanuadelekan.kanary.app.framework.annotation.RequestHandler
+import com.iyanuadelekan.kanary.app.RequestHandler
 import com.iyanuadelekan.kanary.app.send
 import com.iyanuadelekan.kanary.app.withStatus
 import com.iyanuadelekan.kanary.helpers.http.request.done

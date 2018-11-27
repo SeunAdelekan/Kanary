@@ -1,7 +1,6 @@
 package com.iyanuadelekan.kanary.app
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.iyanuadelekan.kanary.app.framework.annotation.ResponseEntity
 import com.iyanuadelekan.kanary.exceptions.InvalidResponseEntityException
 import javax.servlet.http.HttpServletResponse
 

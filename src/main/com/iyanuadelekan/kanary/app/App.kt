@@ -40,18 +40,18 @@ class App : AppFramework, AppContext(), LifeCycle {
     override fun use(vararg middleware: MiddlewareAdapter) = this.middlewareHandler.use(*middleware)
 
     /**
-     * Returns the `next` middleware.
-     *
-     * @return [MiddlewareAdapter] - the `next` middleware.
-     */
-    fun nextMiddleware(): MiddlewareAdapter = middlewareHandler.next()
-
-    /**
      * Checks if a `next` middleware exists in the middleware list.
      *
      * @return [Boolean] - true if `next` middleware exists and false otherwise.
      */
     override fun hasNextMiddleware(): Boolean = middlewareHandler.hasNext()
+
+    /**
+     * Returns the `next` middleware.
+     *
+     * @return [MiddlewareAdapter] - the `next` middleware.
+     */
+    fun nextMiddleware(): MiddlewareAdapter = middlewareHandler.next()
 
     /**
      * Mounts a variable number of routers to the application.
@@ -184,4 +184,5 @@ class App : AppFramework, AppContext(), LifeCycle {
         resourceManager.register(resource)
         return this
     }
+
 }
